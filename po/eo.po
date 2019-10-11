@@ -1,0 +1,294 @@
+# Esperanto translations for leafpad.
+# This file is distributed under the same license as the leafpad package.
+#
+# Benno Schulenberg <benno@vertaalt.nl>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: leafpad 0.8.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-03 21:17+0900\n"
+"PO-Revision-Date: 2010-07-12 20:53+0100\n"
+"Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
+"Language-Team: Esperanto <translation-team-eo@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/menu.c:31
+msgid "/_File"
+msgstr "/_Dosiero"
+
+#: ../src/menu.c:33
+msgid "/File/_New"
+msgstr "/Dosiero/_Nova"
+
+#: ../src/menu.c:35
+msgid "/File/_Open..."
+msgstr "/Dosiero/_Malfermi..."
+
+#: ../src/menu.c:37
+msgid "/File/_Save"
+msgstr "/Dosiero/Kon_servi"
+
+#: ../src/menu.c:39
+msgid "/File/Save _As..."
+msgstr "/Dosiero/Konservi _kiel..."
+
+#: ../src/menu.c:45
+msgid "/File/Print Pre_view"
+msgstr "/Dosiero/Pres-antaŭ_vido"
+
+#: ../src/menu.c:48
+msgid "/File/_Print..."
+msgstr "/Dosiero/_Presi..."
+
+#: ../src/menu.c:55
+msgid "/File/_Quit"
+msgstr "/Dosiero/_Eliri"
+
+#: ../src/menu.c:57
+msgid "/_Edit"
+msgstr "/_Redakti"
+
+#: ../src/menu.c:59
+msgid "/Edit/_Undo"
+msgstr "/Redakti/_Malfari"
+
+#: ../src/menu.c:61
+msgid "/Edit/_Redo"
+msgstr "/Redakti/_Refari"
+
+#: ../src/menu.c:65
+msgid "/Edit/Cu_t"
+msgstr "/Redakti/_Eltondi"
+
+#: ../src/menu.c:67
+msgid "/Edit/_Copy"
+msgstr "/Redakti/_Kopii"
+
+#: ../src/menu.c:69
+msgid "/Edit/_Paste"
+msgstr "/Redakti/_Alglui"
+
+#: ../src/menu.c:71
+msgid "/Edit/_Delete"
+msgstr "/Redakti/_Forigi"
+
+#: ../src/menu.c:75
+msgid "/Edit/Select _All"
+msgstr "/Redakti/Elekti ĉio_n"
+
+#: ../src/menu.c:77
+msgid "/_Search"
+msgstr "/_Serĉi"
+
+#: ../src/menu.c:79
+msgid "/Search/_Find..."
+msgstr "/Serĉi/_Trovi..."
+
+#: ../src/menu.c:81
+msgid "/Search/Find _Next"
+msgstr "/Serĉi/Trovi sek_van"
+
+#: ../src/menu.c:83
+msgid "/Search/Find _Previous"
+msgstr "/Serĉi/Trovi a_ntaŭan"
+
+#: ../src/menu.c:85
+msgid "/Search/_Replace..."
+msgstr "/Serĉi/_Anstataŭigi"
+
+#: ../src/menu.c:89
+msgid "/Search/_Jump To..."
+msgstr "/Serĉi/_Salti al..."
+
+#: ../src/menu.c:91
+msgid "/_Options"
+msgstr "/_Agordoj"
+
+#: ../src/menu.c:93
+msgid "/Options/_Font..."
+msgstr "/Agordoj/_Tiparo..."
+
+#: ../src/menu.c:95
+msgid "/Options/_Word Wrap"
+msgstr "/Agordoj/Lini_faldo"
+
+#: ../src/menu.c:97
+msgid "/Options/_Line Numbers"
+msgstr "/Agordoj/Lini_numeroj"
+
+#: ../src/menu.c:101
+msgid "/Options/_Auto Indent"
+msgstr "/Agordoj/_Aŭtomate krommarĝeni"
+
+#: ../src/menu.c:103
+msgid "/_Help"
+msgstr "/_Helpo"
+
+#: ../src/menu.c:105
+msgid "/Help/_About"
+msgstr "/Helpo/_Pri"
+
+#: ../src/callback.c:316
+msgid "GTK+ based simple text editor"
+msgstr "Simpla GTK+-bazita tekstredaktilo"
+
+#: ../src/callback.c:321
+msgid "translator-credits"
+msgstr "Benno Schulenberg <benno@vertaalt.nl>"
+
+#: ../src/view.c:62
+#, c-format
+msgid "Save changes to '%s'?"
+msgstr "Ĉu konservi la ŝanĝojn en '%s'?"
+
+#: ../src/font.c:44
+msgid "Font"
+msgstr "Tiparo"
+
+#: ../src/selector.c:99
+#, c-format
+msgid "Current Locale (%s)"
+msgstr "Nuna lokaĵo (%s)"
+
+#: ../src/selector.c:130
+msgid "Other Codeset"
+msgstr "Alia signaro"
+
+#: ../src/selector.c:170
+msgid "Code_set:"
+msgstr "_Signaro:"
+
+#: ../src/selector.c:192
+#, c-format
+msgid "'%s' is not supported"
+msgstr "'%s' ne subtenatas"
+
+#: ../src/selector.c:253
+msgid "Auto-Detect"
+msgstr "Aŭtomate detekti"
+
+#: ../src/selector.c:305
+msgid "Open"
+msgstr "Malfermi"
+
+#: ../src/selector.c:305
+msgid "Save As"
+msgstr "Konservi kiel"
+
+#: ../src/selector.c:329
+msgid "C_haracter Coding:"
+msgstr "_Signara kodo:"
+
+#: ../src/selector.c:400
+#, c-format
+msgid "'%s' already exists. Overwrite?"
+msgstr "Dosiero '%s' jam ekzistas. Ĉu anstataŭigi?"
+
+#: ../src/file.c:55
+msgid "Untitled"
+msgstr "Sentitola"
+
+#: ../src/file.c:212
+#, c-format
+msgid "Can't convert codeset to '%s'"
+msgstr "Ne eblas konverti signaron al '%s'"
+
+#: ../src/file.c:225
+msgid "Can't open file to write"
+msgstr "Ne eblas malfermi dosieron por skribi"
+
+#: ../src/file.c:230
+msgid "Can't write file"
+msgstr "Ne eblas skribi dosieron"
+
+#: ../src/search.c:140
+msgid "Search string not found"
+msgstr "Serĉata ĉeno ne trovitas"
+
+#: ../src/search.c:193
+msgid "Replace?"
+msgstr "Ĉu anstataŭigi?"
+
+#: ../src/search.c:260
+#, c-format
+msgid "%d strings replaced"
+msgstr "%d ĉenoj anstataŭigitaj"
+
+#: ../src/search.c:306
+msgid "Replace"
+msgstr "Anstataŭigi"
+
+#: ../src/search.c:313
+msgid "Find"
+msgstr "Serĉi"
+
+#: ../src/search.c:326
+msgid "Fi_nd what:"
+msgstr "_Serĉi kion:"
+
+#: ../src/search.c:342
+msgid "Re_place with:"
+msgstr "_Anstataŭigi per:"
+
+#: ../src/search.c:356
+msgid "_Match case"
+msgstr "_Usklece"
+
+#: ../src/search.c:361
+msgid "Replace _all at once"
+msgstr "Anstataŭigi ĉiuj_n sen demandi"
+
+#: ../src/search.c:412
+msgid "Jump To"
+msgstr "Salti al"
+
+#: ../src/search.c:418
+msgid "_Jump"
+msgstr "_Salti"
+
+#: ../src/search.c:425
+msgid "_Line number:"
+msgstr "Lini_numero:"
+
+#: ../src/about.c:102
+msgid "Credits"
+msgstr "Agnoskoj"
+
+#: ../src/about.c:137
+msgid "Written by"
+msgstr "Verkita de"
+
+#: ../src/about.c:140
+msgid "Documented by"
+msgstr "Dokumentita de"
+
+#: ../src/about.c:146
+msgid "Translated by"
+msgstr "Tradukita de"
+
+#: ../src/about.c:197
+msgid "C_redits"
+msgstr "_Agnoskoj"
+
+#: ../src/about.c:199
+msgid "_Credits"
+msgstr "_Agnoskoj"
+
+#: ../src/about.c:209
+#, c-format
+msgid "About %s"
+msgstr "Pri %s"
+
+#: ../src/gnomeprint.c:261
+msgid "Print"
+msgstr "Presi"
+
+#: ../src/gnomeprint.c:291
+msgid "Print Preview"
+msgstr "Pres-antaŭvido"
+
+#: ../data/leafpad.desktop.in.h:1
+msgid "Simple text editor"
+msgstr "Simpla tekstredaktilo"

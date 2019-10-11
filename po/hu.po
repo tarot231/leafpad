@@ -1,0 +1,301 @@
+# Hungarian translation of Leafpad
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Leafpad package.
+# Reviczky Ádám János <reviczky@freemail.hu>, 2007.
+# Kalman Kemenczy <kkemenczy@gmail.com>, 2010
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: leafpad-0.8.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-03 21:17+0900\n"
+"PO-Revision-Date: 2010-05-04 10:02+0200\n"
+"Last-Translator: Kalman Kemenczy <kkemenczy@gmail.com>\n"
+"Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.2\n"
+
+#: ../src/menu.c:31
+msgid "/_File"
+msgstr "/_Fájl"
+
+#: ../src/menu.c:33
+msgid "/File/_New"
+msgstr "/Fájl/Ú_j"
+
+#: ../src/menu.c:35
+msgid "/File/_Open..."
+msgstr "/Fájl/Megny_itás..."
+
+#: ../src/menu.c:37
+msgid "/File/_Save"
+msgstr "/Fájl/Men_tés"
+
+#: ../src/menu.c:39
+msgid "/File/Save _As..."
+msgstr "/Fájl/Ment Má_skent..."
+
+#: ../src/menu.c:45
+msgid "/File/Print Pre_view"
+msgstr "/Fájl/Ny_omtatási kép"
+
+#: ../src/menu.c:48
+msgid "/File/_Print..."
+msgstr "/Fájl/_Nyomtatás..."
+
+#: ../src/menu.c:55
+msgid "/File/_Quit"
+msgstr "/Fájl/_Kilépés"
+
+#: ../src/menu.c:57
+msgid "/_Edit"
+msgstr "/Sz_erkesztés"
+
+#: ../src/menu.c:59
+msgid "/Edit/_Undo"
+msgstr "/Szerkesztés/_Visszavonás"
+
+#: ../src/menu.c:61
+msgid "/Edit/_Redo"
+msgstr "/Szerkesztés/Ú_jra"
+
+#: ../src/menu.c:65
+msgid "/Edit/Cu_t"
+msgstr "/Szerkesztés/K_ivágás"
+
+#: ../src/menu.c:67
+msgid "/Edit/_Copy"
+msgstr "/Szerkesztés/M_ásolás"
+
+#: ../src/menu.c:69
+msgid "/Edit/_Paste"
+msgstr "/Szerkesztés/_Beillesztés"
+
+#: ../src/menu.c:71
+msgid "/Edit/_Delete"
+msgstr "/Szerkesztés/Tö_rlés"
+
+#: ../src/menu.c:75
+msgid "/Edit/Select _All"
+msgstr "/Szerkesztés/Mindent Kije_lölés"
+
+#: ../src/menu.c:77
+msgid "/_Search"
+msgstr "/Keres_és"
+
+#: ../src/menu.c:79
+msgid "/Search/_Find..."
+msgstr "/Keresés/_Keres..."
+
+#: ../src/menu.c:81
+msgid "/Search/Find _Next"
+msgstr "/Keresés/K_övetkező Keresése"
+
+#: ../src/menu.c:83
+msgid "/Search/Find _Previous"
+msgstr "/Keresés/Elő_ző Keresése"
+
+#: ../src/menu.c:85
+msgid "/Search/_Replace..."
+msgstr "/Keresés/_Csere..."
+
+#: ../src/menu.c:89
+msgid "/Search/_Jump To..."
+msgstr "/Keresés/_Ugrás..."
+
+#: ../src/menu.c:91
+msgid "/_Options"
+msgstr "/_Beállítások"
+
+#: ../src/menu.c:93
+msgid "/Options/_Font..."
+msgstr "/Beállítások/Betütí_pus..."
+
+#: ../src/menu.c:95
+msgid "/Options/_Word Wrap"
+msgstr "/Beállítások/_Sortörés"
+
+#: ../src/menu.c:97
+msgid "/Options/_Line Numbers"
+msgstr "/Beállítások/Sorszá_mok"
+
+#: ../src/menu.c:101
+msgid "/Options/_Auto Indent"
+msgstr "/Beállítások/Automatikus Be_húzás"
+
+#: ../src/menu.c:103
+msgid "/_Help"
+msgstr "/_Súgó"
+
+#: ../src/menu.c:105
+msgid "/Help/_About"
+msgstr "/Súgó/_Névjegy"
+
+#: ../src/callback.c:316
+msgid "GTK+ based simple text editor"
+msgstr "GTK+-ra épülő egyszerű szöveg szerkesztő"
+
+#: ../src/callback.c:321
+msgid "translator-credits"
+msgstr ""
+"Reviczky Ádám János <reviczky@freemail.hu>\n"
+"Kéménczy Kálmán <kkemenczy@gmail.com>"
+
+#: ../src/view.c:62
+#, c-format
+msgid "Save changes to '%s'?"
+msgstr "Elmenti a változásokat ide: '%s' ?"
+
+#: ../src/font.c:44
+msgid "Font"
+msgstr "Betűtípus"
+
+#: ../src/selector.c:99
+#, c-format
+msgid "Current Locale (%s)"
+msgstr "Jelenlegi nyelv (%s)"
+
+#: ../src/selector.c:130
+msgid "Other Codeset"
+msgstr "Más kódtábla"
+
+#: ../src/selector.c:170
+msgid "Code_set:"
+msgstr "Kód_tábla:"
+
+#: ../src/selector.c:192
+#, c-format
+msgid "'%s' is not supported"
+msgstr "A(z) '%s' nem támogatott"
+
+#: ../src/selector.c:253
+msgid "Auto-Detect"
+msgstr "Automatikus felismerés"
+
+#: ../src/selector.c:305
+msgid "Open"
+msgstr "Megnyitás"
+
+#: ../src/selector.c:305
+msgid "Save As"
+msgstr "Mentés másként"
+
+#: ../src/selector.c:329
+msgid "C_haracter Coding:"
+msgstr "K_arakterkódolás:"
+
+#: ../src/selector.c:400
+#, c-format
+msgid "'%s' already exists. Overwrite?"
+msgstr "A(z) '%s' már létezik. Felülírja?"
+
+#: ../src/file.c:55
+msgid "Untitled"
+msgstr "Névtelen"
+
+#: ../src/file.c:212
+#, c-format
+msgid "Can't convert codeset to '%s'"
+msgstr "A kódtáblát nem lehet erre konvertálni: '%s'"
+
+#: ../src/file.c:225
+msgid "Can't open file to write"
+msgstr "Nem lehet a fájlt írásra megnyitni"
+
+#: ../src/file.c:230
+msgid "Can't write file"
+msgstr "Nem lehet a fájlt írni"
+
+#: ../src/search.c:140
+msgid "Search string not found"
+msgstr "A keresett szöveg nem található"
+
+#: ../src/search.c:193
+msgid "Replace?"
+msgstr "Kicseréli?"
+
+#: ../src/search.c:260
+#, c-format
+msgid "%d strings replaced"
+msgstr "A(z) %d szövegrészlet kicserélve"
+
+#: ../src/search.c:306
+msgid "Replace"
+msgstr "Csere"
+
+#: ../src/search.c:313
+msgid "Find"
+msgstr "Keresés"
+
+#: ../src/search.c:326
+msgid "Fi_nd what:"
+msgstr "_Keresett szöveg:"
+
+#: ../src/search.c:342
+msgid "Re_place with:"
+msgstr "_Csere erre:"
+
+#: ../src/search.c:356
+msgid "_Match case"
+msgstr "_Kis- és nagybetű különbözik"
+
+#: ../src/search.c:361
+msgid "Replace _all at once"
+msgstr "Mind_et egyszerre cseréli"
+
+#: ../src/search.c:412
+msgid "Jump To"
+msgstr "Ugrás Ide"
+
+#: ../src/search.c:418
+msgid "_Jump"
+msgstr "_Ugrás"
+
+#: ../src/search.c:425
+msgid "_Line number:"
+msgstr "S_orszám:"
+
+#: ../src/about.c:102
+msgid "Credits"
+msgstr "Köszönet"
+
+#: ../src/about.c:137
+msgid "Written by"
+msgstr "Írta: "
+
+#: ../src/about.c:140
+msgid "Documented by"
+msgstr "Dokumentáció: "
+
+#: ../src/about.c:146
+msgid "Translated by"
+msgstr "Fordította: "
+
+#: ../src/about.c:197
+msgid "C_redits"
+msgstr "Köszöne_t"
+
+#: ../src/about.c:199
+msgid "_Credits"
+msgstr "_Köszönet"
+
+#: ../src/about.c:209
+#, c-format
+msgid "About %s"
+msgstr "%s névjegye"
+
+#: ../src/gnomeprint.c:261
+msgid "Print"
+msgstr "Nyomtatás"
+
+#: ../src/gnomeprint.c:291
+msgid "Print Preview"
+msgstr "Nyomtatási kép"
+
+#: ../data/leafpad.desktop.in.h:1
+msgid "Simple text editor"
+msgstr "Egyszerű szöveg szerkesztő"
