@@ -190,8 +190,7 @@ gint file_save_real(GtkWidget *view, FileInfo *fi)
 	gtk_text_buffer_get_start_iter(buffer, &start);
 	gtk_text_buffer_get_end_iter(buffer, &end);	
 	str = gtk_text_buffer_get_text(buffer, &start, &end, FALSE);
-  gtk_text_buffer_set_modified(buffer, FALSE);
-	
+  
 	switch (fi->lineend) {
 	case CR:
 		convert_line_ending(&str, CR);
@@ -231,6 +230,7 @@ gint file_save_real(GtkWidget *view, FileInfo *fi)
 	}
 	
 	fclose(fp);
+  gtk_text_buffer_set_modified(buffer, FALSE);
 	g_free(cstr);
 	
 	return 0;
