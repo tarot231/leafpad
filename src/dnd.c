@@ -52,7 +52,7 @@ static gint n_drag_types = sizeof(drag_types) / sizeof(drag_types[0]);
 
 void dnd_init(GtkWidget *widget)
 {
-	gtk_drag_dest_set_target_list (widget, gtk_target_list_new (drag_types, n_drag_types));
+  gtk_drag_dest_set(widget, GTK_DEST_DEFAULT_MOTION, drag_types, n_drag_types, GDK_ACTION_MOVE);
 	g_signal_connect(G_OBJECT(widget), "drag_data_received",
 		G_CALLBACK(dnd_drag_data_recieved_handler), NULL);
 	g_signal_connect(G_OBJECT(widget), "drag_motion",
@@ -113,7 +113,7 @@ DV(g_print("second drop signal killed.\n"));
 			flag_called_once = TRUE;
 	}
 	
-DV({	
+// DV({	
 	g_print("info                      = %d\n", info);
 	g_print("time                      = %d\n", time);
 	g_print("context->protocol         = %d\n", context->protocol);
@@ -131,7 +131,7 @@ DV({
 	g_print("selection_data->format    = %d\n", selection_data->format);
 	g_print("selection_data->length    = %d\n", selection_data->length);
 	g_print("%s\n", selection_data->data);
-});	
+// });	
 	
 	if (selection_data->data && info == TARGET_URI_LIST) {
 		files = g_strsplit((gchar *)selection_data->data, "\n" , -1);
