@@ -113,7 +113,7 @@ DV(g_print("second drop signal killed.\n"));
 			flag_called_once = TRUE;
 	}
 	
-// DV({	
+DV({	
 	g_print("info                      = %d\n", info);
 	g_print("time                      = %d\n", time);
 	g_print("context->protocol         = %d\n", context->protocol);
@@ -131,7 +131,7 @@ DV(g_print("second drop signal killed.\n"));
 	g_print("selection_data->format    = %d\n", selection_data->format);
 	g_print("selection_data->length    = %d\n", selection_data->length);
 	g_print("%s\n", selection_data->data);
-// });	
+});	
 	
 	if (selection_data->data && info == TARGET_URI_LIST) {
 		files = g_strsplit((gchar *)selection_data->data, "\n" , -1);
