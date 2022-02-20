@@ -111,7 +111,7 @@ msgstr "/_Options"
 
 #: ../src/menu.c:93
 msgid "/Options/_Font..."
-msgstr "/Options/_Fonte..."
+msgstr "/Options/_Police..."
 
 #: ../src/menu.c:95
 msgid "/Options/_Word Wrap"
@@ -149,7 +149,7 @@ msgstr "Enregistrer les changements pour '%s' ?"
 
 #: ../src/font.c:44
 msgid "Font"
-msgstr "Fonte"
+msgstr "Police"
 
 #: ../src/selector.c:99
 #, c-format
