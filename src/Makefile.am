@@ -1,5 +1,7 @@
 bin_PROGRAMS = leafpad
 
+man_MANS = leafpad.1
+
 INCLUDES = -DICONDIR=\"$(datadir)/pixmaps\"
 
 leafpad_SOURCES = \
