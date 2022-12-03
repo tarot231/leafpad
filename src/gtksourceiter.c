@@ -39,17 +39,19 @@
 static const gchar *
 pointer_from_offset_skipping_decomp (const gchar *str, gint offset)
 {
-	gsize decomp_len;
-	gunichar *decomp;
-	const gchar *p;
+	gchar *casefold, *normal;
+	const gchar *p, *q;
 
 	p = str;
 	while (offset > 0)
 	{
-		decomp = g_unicode_canonical_decomposition (g_utf8_get_char (p), &decomp_len);
-		g_free (decomp);
-		p = g_utf8_next_char (p);
-		offset -= decomp_len;
+		q = g_utf8_next_char (p);
+		casefold = g_utf8_casefold (p, q - p);
+		normal = g_utf8_normalize (casefold, -1, G_NORMALIZE_ALL);
+		offset -= g_utf8_strlen (normal, -1);
+		g_free (casefold);
+		g_free (normal);
+		p = q;
 	}
 	return p;
 }
@@ -69,7 +71,7 @@ g_utf8_strcasestr (const gchar *haystack, const gchar *needle)
 	g_return_val_if_fail (needle != NULL, NULL);
 
 	casefold = g_utf8_casefold (haystack, -1);
-	caseless_haystack = g_utf8_normalize (casefold, -1, G_NORMALIZE_DEFAULT);
+	caseless_haystack = g_utf8_normalize (casefold, -1, G_NORMALIZE_ALL);
 	g_free (casefold);
 
 	needle_len = g_utf8_strlen (needle, -1);
@@ -220,6 +222,12 @@ forward_chars_with_skipping (GtkTextIter *iter,
 	{
 		gboolean ignored = FALSE;
 
+		/* minimal workaround to avoid the infinite loop of bug #168247.
+		 * It doesn't fix the problemjust the symptom...
+		 */
+		if (gtk_text_iter_is_end (iter))
+			return;
+
 		if (skip_nontext && gtk_text_iter_get_char (iter) == GTK_TEXT_UNKNOWN_CHAR)
 			ignored = TRUE;
 
@@ -233,12 +241,14 @@ forward_chars_with_skipping (GtkTextIter *iter,
 			   offsets coming from canonical decompositions of
 			   UTF8 characters (e.g. accented characters) which 
 			   g_utf8_normalize() performs */
-			gunichar *decomp;
-			gsize decomp_len;
-			decomp = g_unicode_canonical_decomposition (
-				gtk_text_iter_get_char (iter), &decomp_len);
-			i -= (decomp_len - 1);
-			g_free (decomp);
+			gchar *normal;
+			gchar buffer[6];
+			gint buffer_len;
+
+			buffer_len = g_unichar_to_utf8 (gtk_text_iter_get_char (iter), buffer);
+			normal = g_utf8_normalize (buffer, buffer_len, G_NORMALIZE_ALL);
+			i -= (g_utf8_strlen (normal, -1) - 1);
+			g_free (normal);
 		}
 
 		gtk_text_iter_forward_char (iter);
@@ -506,12 +516,12 @@ strbreakup (const char *string,
 
 /**
  * gtk_source_iter_forward_search:
- * @iter: start of search
- * @str: a search string
- * @flags: flags affecting how the search is done
- * @match_start: return location for start of match, or %NULL
- * @match_end: return location for end of match, or %NULL
- * @limit: bound for the search, or %NULL for the end of the buffer
+ * @iter: start of search.
+ * @str: a search string.
+ * @flags: flags affecting how the search is done.
+ * @match_start: return location for start of match, or %%NULL.
+ * @match_end: return location for end of match, or %%NULL.
+ * @limit: bound for the search, or %%NULL for the end of the buffer.
  * 
  * Searches forward for @str. Any match is returned by setting 
  * @match_start to the first character of the match and @match_end to the 
@@ -533,7 +543,7 @@ strbreakup (const char *string,
  * Same as gtk_text_iter_forward_search(), but supports case insensitive
  * searching.
  * 
- * Return value: whether a match was found
+ * Return value: whether a match was found.
  **/
 gboolean
 gtk_source_iter_forward_search (const GtkTextIter   *iter,
@@ -626,17 +636,17 @@ gtk_source_iter_forward_search (const GtkTextIter   *iter,
 
 /**
  * gtk_source_iter_backward_search:
- * @iter: a #GtkTextIter where the search begins
- * @str: search string
- * @flags: bitmask of flags affecting the search
- * @match_start: return location for start of match, or %NULL
- * @match_end: return location for end of match, or %NULL
- * @limit: location of last possible @match_start, or %NULL for start of buffer
+ * @iter: a #GtkTextIter where the search begins.
+ * @str: search string.
+ * @flags: bitmask of flags affecting the search.
+ * @match_start: return location for start of match, or %%NULL.
+ * @match_end: return location for end of match, or %%NULL.
+ * @limit: location of last possible @match_start, or %%NULL for start of buffer.
  * 
  * Same as gtk_text_iter_backward_search(), but supports case insensitive
  * searching.
  * 
- * Return value: whether a match was found
+ * Return value: whether a match was found.
  **/
 gboolean
 gtk_source_iter_backward_search (const GtkTextIter   *iter,
