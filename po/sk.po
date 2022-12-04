@@ -1,20 +1,24 @@
 # Slovak translation of leafpad.
 # Copyright (C) 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the leafpad package.
+#
 # Petr Chabada <leafpad_chabada_sk>, 2005.
-# 
-# 
+# Andrej Kacian <andrej@kacian.sk>, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: leafpad 0.7.9\n"
+"Project-Id-Version: leafpad 0.8.16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-28 02:41+0900\n"
-"PO-Revision-Date: 2005-07-10 21:20+0100\n"
-"Last-Translator: Peter Chabada <sk-i18n_chabada_sk>\n"
-"Language-Team: Slovak <sk-i18n@linux.sk>\n"
+"POT-Creation-Date: 2008-09-03 21:17+0900\n"
+"PO-Revision-Date: 2019-05-26 15:43+0100\n"
+"Last-Translator: Andrej Kacian <andrej@kacian.sk>\n"
+"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../src/menu.c:31
 msgid "/_File"
@@ -37,9 +41,8 @@ msgid "/File/Save _As..."
 msgstr "/Súbor/Uložiť _ako..."
 
 #: ../src/menu.c:45
-#, fuzzy
 msgid "/File/Print Pre_view"
-msgstr "/Súbor/_Tlačiť..."
+msgstr "/Súbor/Náhľad t_lače..."
 
 #: ../src/menu.c:48
 msgid "/File/_Print..."
@@ -182,7 +185,7 @@ msgstr "Uložiť ako"
 
 #: ../src/selector.c:329
 msgid "C_haracter Coding:"
-msgstr "_Kódovanie znakov: "
+msgstr "_Kódovanie znakov:"
 
 #: ../src/selector.c:400
 #, c-format
@@ -231,27 +234,27 @@ msgstr "Hľadať"
 msgid "Fi_nd what:"
 msgstr "Náj_sť:"
 
-#: ../src/search.c:345
+#: ../src/search.c:342
 msgid "Re_place with:"
 msgstr "Nahradiť _s:"
 
-#: ../src/search.c:359
+#: ../src/search.c:356
 msgid "_Match case"
 msgstr "_Rozlišovať veľkosť písmen"
 
-#: ../src/search.c:364
+#: ../src/search.c:361
 msgid "Replace _all at once"
 msgstr "Nahradiť _všetko"
 
-#: ../src/search.c:415
+#: ../src/search.c:412
 msgid "Jump To"
 msgstr "Prejsť na riadok"
 
-#: ../src/search.c:421
+#: ../src/search.c:418
 msgid "_Jump"
 msgstr "_Prejsť na riadok"
 
-#: ../src/search.c:428
+#: ../src/search.c:425
 msgid "_Line number:"
 msgstr "Číslo _riadku:"
 
@@ -290,15 +293,11 @@ msgstr "Tlač"
 
 #: ../src/gnomeprint.c:291
 msgid "Print Preview"
-msgstr ""
+msgstr "Náhľad tlače"
 
 #: ../data/leafpad.desktop.in.h:1
 msgid "Simple text editor"
 msgstr "Jednoduchý textový editor"
-
-#, fuzzy
-#~ msgid "/_View"
-#~ msgstr "/_Súbor"
 
 #~ msgid "Can't convert codeset to current locale"
 #~ msgstr "Nemôžem skonvertovať znakovú sadu do lokálneho nastavenia"

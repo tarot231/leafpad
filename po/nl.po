@@ -1,21 +1,23 @@
-# Translation of leafpad-0.8.13 to Dutch.
-# Copyright (C) 2004-2006 Tarot Osuji <tarot@sdf.lonestar.org>
-# This file is distributed under the same license as the leafpad package.
-#
+# Dutch translation of the Leafpad package.
+# Copyright (C) the author of the Leafpad package.
+# This file is distributed under the same license as the Leafpad package.
 # Wouter Van Hemel <wouter-oss@publica.duodecim.org>, 2006.
 # Benno Schulenberg <benno@vertaalt.nl>, 2008.
+# Pjotr, 2011.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: leafpad-0.8.13\n"
+"Project-Id-Version: leafpad-0.8.16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-28 02:41+0900\n"
-"PO-Revision-Date: 2008-01-15 15:15+0100\n"
-"Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
+"POT-Creation-Date: 2008-09-03 21:17+0900\n"
+"PO-Revision-Date: 2011-07-08 15:15+0200\n"
+"Last-Translator: Pjotr <pliniusminor@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/menu.c:31
@@ -136,13 +138,13 @@ msgstr "/Hulp/_Info"
 
 #: ../src/callback.c:316
 msgid "GTK+ based simple text editor"
-msgstr "Eenvoudige teksteditor gebouwd op GTK+"
+msgstr "Eenvoudige tekstbewerker gebaseerd op GTK+"
 
 #: ../src/callback.c:321
 msgid "translator-credits"
 msgstr ""
 "Wouter Van Hemel <wouter-oss@publica.duodecim.org>\n"
-"Benno Schulenberg <benno@vertaalt.nl>"
+"Benno Schulenberg <benno@vertaalt.nl>Pjotr"
 
 #: ../src/view.c:62
 #, c-format
@@ -199,11 +201,11 @@ msgstr "Naamloos"
 #: ../src/file.c:212
 #, c-format
 msgid "Can't convert codeset to '%s'"
-msgstr "Kan de tekenset niet omzetten naar '%s'"
+msgstr "Kan tekencodering niet omzetten naar '%s'"
 
 #: ../src/file.c:225
 msgid "Can't open file to write"
-msgstr "Kan het te schrijven bestand niet openen"
+msgstr "Kan te schrijven bestand niet openen"
 
 #: ../src/file.c:230
 msgid "Can't write file"
@@ -220,7 +222,7 @@ msgstr "Vervangen?"
 #: ../src/search.c:260
 #, c-format
 msgid "%d strings replaced"
-msgstr "Er zijn %d vondsten vervangen"
+msgstr "Er zijn %d tekstsnoeren vervangen"
 
 #: ../src/search.c:306
 msgid "Replace"
@@ -234,27 +236,27 @@ msgstr "Zoeken"
 msgid "Fi_nd what:"
 msgstr "Zoeken _naar:"
 
-#: ../src/search.c:345
+#: ../src/search.c:342
 msgid "Re_place with:"
 msgstr "Vervangen _door:"
 
-#: ../src/search.c:359
+#: ../src/search.c:356
 msgid "_Match case"
 msgstr "_Hoofdlettergevoelig"
 
-#: ../src/search.c:364
+#: ../src/search.c:361
 msgid "Replace _all at once"
-msgstr "Alle v_ondsten vervangen"
+msgstr "Alles _meteen vervangen"
 
-#: ../src/search.c:415
+#: ../src/search.c:412
 msgid "Jump To"
 msgstr "Naar regel"
 
-#: ../src/search.c:421
+#: ../src/search.c:418
 msgid "_Jump"
 msgstr "_Spring"
 
-#: ../src/search.c:428
+#: ../src/search.c:425
 msgid "_Line number:"
 msgstr "Regel_nummer:"
 
@@ -299,4 +301,4 @@ msgstr "Afdrukvoorbeeld"
 
 #: ../data/leafpad.desktop.in.h:1
 msgid "Simple text editor"
-msgstr "Eenvoudige teksteditor"
+msgstr "Eenvoudige tekstbewerker"

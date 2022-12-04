@@ -1,19 +1,24 @@
 # Czech translation of leafpad.
 # Copyright (C) 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the leafpad package.
+#
 # Petr Vysloužil <evyslouz@volny.cz>, 2004.
-# 
+# Marek Černocký <marek@manet.cz>, 2011.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: leafpad 0.7.6\n"
+"Project-Id-Version: leafpad 0.8.16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-28 02:41+0900\n"
-"PO-Revision-Date: 2004-11-18 23:58+0100\n"
-"Last-Translator: Petr Vysloužil <evyslouz@volny.cz>\n"
-"Language-Team: Czech <cs@li.org>\n"
+"POT-Creation-Date: 2008-09-03 21:17+0900\n"
+"PO-Revision-Date: 2011-11-29 09:58+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
+"Language: cs\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bitReport-Msgid-Bugs-To: tarot@sdf.lonestar.org\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: ../src/menu.c:31
 msgid "/_File"
@@ -25,7 +30,7 @@ msgstr "/Soubor/_Nový"
 
 #: ../src/menu.c:35
 msgid "/File/_Open..."
-msgstr "/Soubor/_Otevřít"
+msgstr "/Soubor/_Otevřít…"
 
 #: ../src/menu.c:37
 msgid "/File/_Save"
@@ -33,53 +38,51 @@ msgstr "/Soubor/_Uložit"
 
 #: ../src/menu.c:39
 msgid "/File/Save _As..."
-msgstr "/Soubor/Uložit _jako..."
+msgstr "/Soubor/Uložit _jako…"
 
 #: ../src/menu.c:45
-#, fuzzy
 msgid "/File/Print Pre_view"
-msgstr "/Soubor/_Konec"
+msgstr "/Soubor/Náhled tisk_u"
 
 #: ../src/menu.c:48
-#, fuzzy
 msgid "/File/_Print..."
-msgstr "/Soubor/_Konec"
+msgstr "/Soubor/_Tisk"
 
 #: ../src/menu.c:55
 msgid "/File/_Quit"
-msgstr "/Soubor/_Konec"
+msgstr "/Soubor/U_končit"
 
 #: ../src/menu.c:57
 msgid "/_Edit"
-msgstr "/Ú_pravy"
+msgstr "/_Upravit"
 
 #: ../src/menu.c:59
 msgid "/Edit/_Undo"
-msgstr "/Ú_pravy/_Zpět"
+msgstr "/Upravit/_Zpět"
 
 #: ../src/menu.c:61
 msgid "/Edit/_Redo"
-msgstr "/Ú_pravy/Zn_ovu"
+msgstr "/Upravit/Zn_ovu"
 
 #: ../src/menu.c:65
 msgid "/Edit/Cu_t"
-msgstr "/Ú_pravy/_Vyjmout"
+msgstr "/Upravit/_Vyjmout"
 
 #: ../src/menu.c:67
 msgid "/Edit/_Copy"
-msgstr "/Ú_pravy/_Kopírovat"
+msgstr "/Upravit/_Kopírovat"
 
 #: ../src/menu.c:69
 msgid "/Edit/_Paste"
-msgstr "/Ú_pravy/V_ložit"
+msgstr "/Upravit/V_ložit"
 
 #: ../src/menu.c:71
 msgid "/Edit/_Delete"
-msgstr "/Ú_pravy/_Odstranit"
+msgstr "/Upravit/O_dstranit"
 
 #: ../src/menu.c:75
 msgid "/Edit/Select _All"
-msgstr "/Ú_pravy/_Vybrat vše"
+msgstr "/Upravit/Vybr_at vše"
 
 #: ../src/menu.c:77
 msgid "/_Search"
@@ -87,43 +90,43 @@ msgstr "/_Hledat"
 
 #: ../src/menu.c:79
 msgid "/Search/_Find..."
-msgstr "/Hledat/_Hledat"
+msgstr "/Hledat/Nají_t…"
 
 #: ../src/menu.c:81
 msgid "/Search/Find _Next"
-msgstr "/Hledat/Hledat _následující"
+msgstr "/Hledat/Najít _následující"
 
 #: ../src/menu.c:83
 msgid "/Search/Find _Previous"
-msgstr "/Hledat/Hledat _předchozí"
+msgstr "/Hledat/Najít _předchozí"
 
 #: ../src/menu.c:85
 msgid "/Search/_Replace..."
-msgstr "/Hledat/Nah_radit"
+msgstr "/Hledat/Nah_radit…"
 
 #: ../src/menu.c:89
 msgid "/Search/_Jump To..."
-msgstr "/Hledat/_Přejít na"
+msgstr "/Hledat/Pře_jít na…"
 
 #: ../src/menu.c:91
 msgid "/_Options"
-msgstr "/_Nástroje"
+msgstr "/V_olby"
 
 #: ../src/menu.c:93
 msgid "/Options/_Font..."
-msgstr "/_Nástroje/_Písmo"
+msgstr "/Volby/_Písmo…"
 
 #: ../src/menu.c:95
 msgid "/Options/_Word Wrap"
-msgstr "/Nástroje/_Zalamovat řádky"
+msgstr "/Volby/_Zalamovat řádky"
 
 #: ../src/menu.c:97
 msgid "/Options/_Line Numbers"
-msgstr "/_Nástroje/Čí_slovat řádky"
+msgstr "/Volby/Čís_lovat řádky"
 
 #: ../src/menu.c:101
 msgid "/Options/_Auto Indent"
-msgstr "/Nastavení/_Automatické odsazování"
+msgstr "/Volby/_Automatické odsazování"
 
 #: ../src/menu.c:103
 msgid "/_Help"
@@ -135,16 +138,18 @@ msgstr "/Nápověda/O _aplikaci"
 
 #: ../src/callback.c:316
 msgid "GTK+ based simple text editor"
-msgstr "Jednoduchý GTK+ textový editor"
+msgstr "Jednoduchý textový editor založený na GTK+"
 
 #: ../src/callback.c:321
 msgid "translator-credits"
-msgstr "Petr Vyslouzil <evyslouz@volny.cz>"
+msgstr ""
+"Petr Vysloužil <evyslouz@volny.cz>\n"
+"Marek Černocký <marek@manet.cz>"
 
 #: ../src/view.c:62
 #, c-format
 msgid "Save changes to '%s'?"
-msgstr "Uložit změny v '%s'?"
+msgstr "Uložit změny do „%s“?"
 
 #: ../src/font.c:44
 msgid "Font"
@@ -153,7 +158,7 @@ msgstr "Písmo"
 #: ../src/selector.c:99
 #, c-format
 msgid "Current Locale (%s)"
-msgstr "Aktuální locale (%s)"
+msgstr "Aktuální národní prostředí (%s)"
 
 #: ../src/selector.c:130
 msgid "Other Codeset"
@@ -166,12 +171,11 @@ msgstr "Znaková _sada:"
 #: ../src/selector.c:192
 #, c-format
 msgid "'%s' is not supported"
-msgstr "'%s' není podporována"
+msgstr "„%s“ není podporována"
 
 #: ../src/selector.c:253
-#, fuzzy
 msgid "Auto-Detect"
-msgstr "Autodetekce"
+msgstr "Zjistit automaticky"
 
 #: ../src/selector.c:305
 msgid "Open"
@@ -188,7 +192,7 @@ msgstr "_Kódování znaků:"
 #: ../src/selector.c:400
 #, c-format
 msgid "'%s' already exists. Overwrite?"
-msgstr "'%s' již existuje. Přepsat?"
+msgstr "„%s“ již existuje. Přepsat?"
 
 #: ../src/file.c:55
 msgid "Untitled"
@@ -197,19 +201,19 @@ msgstr "Nepojmenovaný"
 #: ../src/file.c:212
 #, c-format
 msgid "Can't convert codeset to '%s'"
-msgstr "Nemohu převést znakovou sadu na '%s'"
+msgstr "Nelze převést znakovou sadu na „%s“"
 
 #: ../src/file.c:225
 msgid "Can't open file to write"
-msgstr "Nemohu otevřít soubor k zápisu"
+msgstr "Nelze otevřít soubor k zápisu"
 
 #: ../src/file.c:230
 msgid "Can't write file"
-msgstr "Nemohu zapsat soubor"
+msgstr "Nelze zapsat soubor"
 
 #: ../src/search.c:140
 msgid "Search string not found"
-msgstr "Hledaný řetězec nenalezen"
+msgstr "Hledaný řetězec nebyl nalezen"
 
 #: ../src/search.c:193
 msgid "Replace?"
@@ -218,127 +222,81 @@ msgstr "Nahradit?"
 #: ../src/search.c:260
 #, c-format
 msgid "%d strings replaced"
-msgstr "nahrazeno '%d' řetězců"
+msgstr "nahrazeno „%d“ řetězců"
 
 #: ../src/search.c:306
 msgid "Replace"
-msgstr "Nahradit"
+msgstr "Nahrazení"
 
 #: ../src/search.c:313
 msgid "Find"
-msgstr "Hledat"
+msgstr "Hledání"
 
 #: ../src/search.c:326
-#, fuzzy
 msgid "Fi_nd what:"
 msgstr "_Hledat:"
 
-#: ../src/search.c:345
-#, fuzzy
+#: ../src/search.c:342
 msgid "Re_place with:"
-msgstr "Nahra_dit čím:"
+msgstr "Nahra_dit za:"
 
-#: ../src/search.c:359
+#: ../src/search.c:356
 msgid "_Match case"
 msgstr "_Rozlišovat velikost písmen"
 
-#: ../src/search.c:364
+#: ../src/search.c:361
 msgid "Replace _all at once"
 msgstr "Nahradit vš_e"
 
-#: ../src/search.c:415
+#: ../src/search.c:412
 msgid "Jump To"
-msgstr "Jit na _řádek"
+msgstr "Přechod na řádek"
 
-#: ../src/search.c:421
+#: ../src/search.c:418
 msgid "_Jump"
-msgstr "_Přejít"
+msgstr "Pře_jít"
 
-#: ../src/search.c:428
-#, fuzzy
+#: ../src/search.c:425
 msgid "_Line number:"
-msgstr "_Číslo řádku:"
+msgstr "Čís_lo řádku:"
 
 #: ../src/about.c:102
 msgid "Credits"
-msgstr ""
+msgstr "Zásluhy"
 
 #: ../src/about.c:137
 msgid "Written by"
-msgstr ""
+msgstr "Napsal"
 
 #: ../src/about.c:140
 msgid "Documented by"
-msgstr ""
+msgstr "Zdokumentoval"
 
 #: ../src/about.c:146
 msgid "Translated by"
-msgstr ""
+msgstr "Přeložil"
 
 #: ../src/about.c:197
 msgid "C_redits"
-msgstr ""
+msgstr "Zá_sluhy"
 
 #: ../src/about.c:199
 msgid "_Credits"
-msgstr ""
+msgstr "Záslu_hy"
 
 #: ../src/about.c:209
 #, c-format
 msgid "About %s"
-msgstr "O %s"
+msgstr "O aplikaci %s"
 
 #: ../src/gnomeprint.c:261
 msgid "Print"
-msgstr ""
+msgstr "Tisk"
 
 #: ../src/gnomeprint.c:291
 msgid "Print Preview"
-msgstr ""
+msgstr "Náhled tisku"
 
 #: ../data/leafpad.desktop.in.h:1
 msgid "Simple text editor"
 msgstr "Jednoduchý textový editor"
-
-#, fuzzy
-#~ msgid "/_View"
-#~ msgstr "/_Soubor"
-
-#, fuzzy
-#~ msgid "Can't convert codeset to current locale"
-#~ msgstr "Nemohu převést znakovou sadu na '%s'"
-
-#, fuzzy
-#~ msgid "Can't write temporary file"
-#~ msgstr "Nemohu zapsat soubor"
-
-#~ msgid "Other Codeset (%s)"
-#~ msgstr "Jiná znaková sada (%s)"
-
-#~ msgid "Other Codeset..."
-#~ msgstr "Jiná znaková sada..."
-
-#, fuzzy
-#~ msgid "Unicode (UTF-8)"
-#~ msgstr "Unicode"
-
-#~ msgid "Western"
-#~ msgstr "Západní"
-
-#~ msgid "Cyrillic"
-#~ msgstr "Azbuka"
-
-#~ msgid "Chinese Simplified"
-#~ msgstr "Čínské zjednodušené"
-
-#~ msgid "Chinese Traditional"
-#~ msgstr "Čínské tradiční"
-
-#~ msgid "Japanese"
-#~ msgstr "Japonské"
-
-#~ msgid "Korean"
-#~ msgstr "Korejské"
-
-#~ msgid "Enter Codeset"
-#~ msgstr "Zadat znakovou sadu"

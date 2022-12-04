@@ -1,21 +1,24 @@
-# translation of tr.po to Türkçe
-# translation of leafpad.po to Türkçe
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Turkish translations for leafpad
+# This file is distributed under the same license as the leafpad package.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+#
 # kaya oğuz <kaya@kuzeykutbu.org>, 2005.
-# 
+# Volkan Gezer <volkangezer@gmail.com>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: tr\n"
+"Project-Id-Version: leafpad 0.8.16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-28 02:41+0900\n"
-"PO-Revision-Date: 2005-08-05 17:26+0300\n"
-"Last-Translator: kaya oğuz <kaya@kuzeykutbu.org>\n"
-"Language-Team: Türkçe <yerellestirme@kde.org.tr>\n"
+"POT-Creation-Date: 2008-09-03 21:17+0900\n"
+"PO-Revision-Date: 2013-08-02 00:29+0200\n"
+"Last-Translator: Volkan Gezer <vlkngzr@gmail.com>\n"
+"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
+"Language: tr\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../src/menu.c:31
 msgid "/_File"
@@ -38,9 +41,8 @@ msgid "/File/Save _As..."
 msgstr "/Dosya/_Farklı Kaydet..."
 
 #: ../src/menu.c:45
-#, fuzzy
 msgid "/File/Print Pre_view"
-msgstr "/Dosya/Ya_zdır... "
+msgstr "/Dosya/Ya_zdırma Önizlemesi..."
 
 #: ../src/menu.c:48
 msgid "/File/_Print..."
@@ -232,27 +234,27 @@ msgstr "Bul"
 msgid "Fi_nd what:"
 msgstr "Bunu _bul:"
 
-#: ../src/search.c:345
+#: ../src/search.c:342
 msgid "Re_place with:"
 msgstr "Bununla _değiştir:"
 
-#: ../src/search.c:359
+#: ../src/search.c:356
 msgid "_Match case"
 msgstr "_Büyük/küçük harf eşleştir"
 
-#: ../src/search.c:364
+#: ../src/search.c:361
 msgid "Replace _all at once"
 msgstr "Hepsini bir kerede _değiştir"
 
-#: ../src/search.c:415
+#: ../src/search.c:412
 msgid "Jump To"
 msgstr "Satıra Git"
 
-#: ../src/search.c:421
+#: ../src/search.c:418
 msgid "_Jump"
 msgstr "_Git"
 
-#: ../src/search.c:428
+#: ../src/search.c:425
 msgid "_Line number:"
 msgstr "_Satır Numarası:"
 
@@ -291,15 +293,11 @@ msgstr "Yazdır"
 
 #: ../src/gnomeprint.c:291
 msgid "Print Preview"
-msgstr ""
+msgstr "Yazdırma Önizlemesi"
 
 #: ../data/leafpad.desktop.in.h:1
 msgid "Simple text editor"
 msgstr "Basit metin düzenleyicisi"
-
-#, fuzzy
-#~ msgid "/_View"
-#~ msgstr "/_Dosya"
 
 #~ msgid "Can't convert codeset to current locale"
 #~ msgstr "Kodlama geçerli yer kodlamasına dönüştürülemiyor"

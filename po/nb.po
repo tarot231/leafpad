@@ -1,301 +1,300 @@
-# Traditional Chinese translation for leafpad.
-# Copyright (C) 2004 Free Software Foundation, Inc.
-# This file is distributed under the same license as the leafpad package.
-# OLS3 <ols3@lxer.idv.tw>, 2005.
-# Wei-Lun Chao <bluebat@member.fsf.org>, 2008, 2013.
+# Norwegian Bokmål translation for leafpad.
+# This file is distributed under the same license as the Leafpad package.
+# Imre Kristoffer Eilertsen <imreeil42@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: leafpad 0.8.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-03 21:17+0900\n"
-"PO-Revision-Date: 2013-02-12 23:21+0800\n"
-"Last-Translator: Wei-Lun Chao <bluebat@member.fsf.org>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
-"Language: zh_TW\n"
+"PO-Revision-Date: 2019-08-13 18:32+0200\n"
+"Last-Translator: Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
+"Language-Team: Norwegian Bokmaal <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/menu.c:31
 msgid "/_File"
-msgstr "/檔案(_F)"
+msgstr "/_Fil"
 
 #: ../src/menu.c:33
 msgid "/File/_New"
-msgstr "/檔案(F)/新建(_N)"
+msgstr "/Fil/_Ny"
 
 #: ../src/menu.c:35
 msgid "/File/_Open..."
-msgstr "/檔案(F)/開啟(_O)…"
+msgstr "/Fil/_Åpne …"
 
 #: ../src/menu.c:37
 msgid "/File/_Save"
-msgstr "/檔案(F)/儲存(_S)"
+msgstr "/Fil/_Lagre"
 
 #: ../src/menu.c:39
 msgid "/File/Save _As..."
-msgstr "/檔案(F)/另存為(_A)…"
+msgstr "/Fil/Lagre _som…"
 
 #: ../src/menu.c:45
 msgid "/File/Print Pre_view"
-msgstr "/檔案(F)/列印預覽(_V)"
+msgstr "/Fil/Forhåndsvis utskrift"
 
 #: ../src/menu.c:48
 msgid "/File/_Print..."
-msgstr "/檔案(F)/列印(_P)…"
+msgstr "/Fil/_Skriv ut …"
 
 #: ../src/menu.c:55
 msgid "/File/_Quit"
-msgstr "/檔案(F)/離開(_Q)"
+msgstr "/Fil/_Avslutt"
 
 #: ../src/menu.c:57
 msgid "/_Edit"
-msgstr "/編輯(_E)"
+msgstr "/_Rediger"
 
 #: ../src/menu.c:59
 msgid "/Edit/_Undo"
-msgstr "/編輯(E)/回復(_U)"
+msgstr "/Rediger/_Angre"
 
 #: ../src/menu.c:61
 msgid "/Edit/_Redo"
-msgstr "/編輯(E)/重做(_R)"
+msgstr "/Rediger/Omgjør"
 
 #: ../src/menu.c:65
 msgid "/Edit/Cu_t"
-msgstr "/編輯(E)/剪下(_T)"
+msgstr "/Rediger/Klipp u_t"
 
 #: ../src/menu.c:67
 msgid "/Edit/_Copy"
-msgstr "/編輯(E)/複製(_C)"
+msgstr "/Rediger/_Kopier"
 
 #: ../src/menu.c:69
 msgid "/Edit/_Paste"
-msgstr "/編輯(E)/貼上(_P)"
+msgstr "/Rediger/_Lim inn"
 
 #: ../src/menu.c:71
 msgid "/Edit/_Delete"
-msgstr "/編輯(E)/刪除(_D)"
+msgstr "/Rediger/_Slett"
 
 #: ../src/menu.c:75
 msgid "/Edit/Select _All"
-msgstr "/編輯(E)/全選(_A)"
+msgstr "/Rediger/Velg _alle"
 
 #: ../src/menu.c:77
 msgid "/_Search"
-msgstr "/搜尋(_S)"
+msgstr "/_Søk"
 
 #: ../src/menu.c:79
 msgid "/Search/_Find..."
-msgstr "/搜尋(S)/尋找(_F)…"
+msgstr "/Søk/_Finn …"
 
 #: ../src/menu.c:81
 msgid "/Search/Find _Next"
-msgstr "/搜尋(S)/尋找下一個(_N)"
+msgstr "/Søk/Finn _neste"
 
 #: ../src/menu.c:83
 msgid "/Search/Find _Previous"
-msgstr "/搜尋(S)/尋找上一個(_P)"
+msgstr "/Søk/Finn _forrige"
 
 #: ../src/menu.c:85
 msgid "/Search/_Replace..."
-msgstr "/搜尋/置換(_R)…"
+msgstr "/Søk/_Erstatt …"
 
 #: ../src/menu.c:89
 msgid "/Search/_Jump To..."
-msgstr "/搜尋(S)/跳至(_J)…"
+msgstr "/Søk/_Hopp til …"
 
 #: ../src/menu.c:91
 msgid "/_Options"
-msgstr "/選項(_O)"
+msgstr "/_Innstillinger"
 
 #: ../src/menu.c:93
 msgid "/Options/_Font..."
-msgstr "/選項(O)/字型(_F)…"
+msgstr "/Innstillinger/_Skrifttype …"
 
 #: ../src/menu.c:95
 msgid "/Options/_Word Wrap"
-msgstr "/選項(O)/自動換列(_W)"
+msgstr "/Innstillinger/_Ordbryting"
 
 #: ../src/menu.c:97
 msgid "/Options/_Line Numbers"
-msgstr "/選項(O)/列號(_L)"
+msgstr "/Innstillinger/_Nummererte linjer"
 
 #: ../src/menu.c:101
 msgid "/Options/_Auto Indent"
-msgstr "/選項(O)/自動縮排(_A)"
+msgstr "/Innstillinger/_Auto-innrykking"
 
 #: ../src/menu.c:103
 msgid "/_Help"
-msgstr "/求助(_H)"
+msgstr "/_Hjelp"
 
 #: ../src/menu.c:105
 msgid "/Help/_About"
-msgstr "/求助(H)/關於(_A)"
+msgstr "/Hjelp/_Om"
 
 #: ../src/callback.c:316
 msgid "GTK+ based simple text editor"
-msgstr "基於 GTK+ 的簡易文字編輯器"
+msgstr "GTK+-basert enkel tekstredigerer"
 
 #: ../src/callback.c:321
 msgid "translator-credits"
 msgstr ""
-"OLS3 <ols3@lxer.idv.tw>\n"
-"趙惟倫 <bluebat@member.fsf.org>"
+"Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
+"Send feilmeldinger og kommentarer til <i18n-nb@lister.ping.uio.no>"
 
 #: ../src/view.c:62
 #, c-format
 msgid "Save changes to '%s'?"
-msgstr "要將變更儲存到「%s」？"
+msgstr "Vil du lagre endringene til '%s'?"
 
 #: ../src/font.c:44
 msgid "Font"
-msgstr "字型"
+msgstr "Skrift"
 
 #: ../src/selector.c:99
 #, c-format
 msgid "Current Locale (%s)"
-msgstr "目前語區 (%s)"
+msgstr "Nåværende områdeinnstilling (%s)"
 
 #: ../src/selector.c:130
 msgid "Other Codeset"
-msgstr "其它編碼"
+msgstr "Annet kodesett"
 
 #: ../src/selector.c:170
 msgid "Code_set:"
-msgstr "編碼(_S):"
+msgstr "Kode_sett:"
 
 #: ../src/selector.c:192
 #, c-format
 msgid "'%s' is not supported"
-msgstr "「%s」尚未支援"
+msgstr "'%s' er ikke støttet"
 
 #: ../src/selector.c:253
 msgid "Auto-Detect"
-msgstr "自動偵測"
+msgstr "Auto-oppdag"
 
 #: ../src/selector.c:305
 msgid "Open"
-msgstr "開啟"
+msgstr "Åpne"
 
 #: ../src/selector.c:305
 msgid "Save As"
-msgstr "另存新檔"
+msgstr "Lagre som"
 
 #: ../src/selector.c:329
 msgid "C_haracter Coding:"
-msgstr "字元編碼(_H):"
+msgstr "T_egnkoding:"
 
 #: ../src/selector.c:400
 #, c-format
 msgid "'%s' already exists. Overwrite?"
-msgstr "檔案「%s」已經存在。要覆蓋它嗎？"
+msgstr "'%s' finnes allerede. Vil du overskrive den?"
 
 #: ../src/file.c:55
 msgid "Untitled"
-msgstr "未命名"
+msgstr "Navnløs"
 
 #: ../src/file.c:212
 #, c-format
 msgid "Can't convert codeset to '%s'"
-msgstr "無法將編碼轉換為「%s」"
+msgstr "Kan ikke konvertere kodesettet til '%s'"
 
 #: ../src/file.c:225
 msgid "Can't open file to write"
-msgstr "無法打開要寫入的檔案"
+msgstr "Kan ikke åpne filen i lagringsbar tilstand"
 
 #: ../src/file.c:230
 msgid "Can't write file"
-msgstr "無法寫入檔案"
+msgstr "Kan ikke lagre til filen"
 
 #: ../src/search.c:140
 msgid "Search string not found"
-msgstr "找不到搜尋字串"
+msgstr "Søkestrengen ble ikke funnet"
 
 #: ../src/search.c:193
 msgid "Replace?"
-msgstr "要置換嗎？"
+msgstr "Vil du erstatte den?"
 
 #: ../src/search.c:260
 #, c-format
 msgid "%d strings replaced"
-msgstr "置換了 %d 個字串"
+msgstr "%d strenger ble erstattet"
 
 #: ../src/search.c:306
 msgid "Replace"
-msgstr "置換"
+msgstr "Erstatt"
 
 #: ../src/search.c:313
 msgid "Find"
-msgstr "尋找"
+msgstr "Finn"
 
 #: ../src/search.c:326
 msgid "Fi_nd what:"
-msgstr "尋找(_N):"
+msgstr "Fi_nn:"
 
 #: ../src/search.c:342
 msgid "Re_place with:"
-msgstr "置換成(_P):"
+msgstr "Er_statt med:"
 
 #: ../src/search.c:356
 msgid "_Match case"
-msgstr "區分大小寫(_M)"
+msgstr "_Skill mellom små/store bokstaver"
 
 #: ../src/search.c:361
 msgid "Replace _all at once"
-msgstr "全部置換(_A)"
+msgstr "Erstatt _alle på en gang"
 
 #: ../src/search.c:412
 msgid "Jump To"
-msgstr "跳至"
+msgstr "Hopp til"
 
 #: ../src/search.c:418
 msgid "_Jump"
-msgstr "跳至(_J)"
+msgstr "_Hopp"
 
 #: ../src/search.c:425
 msgid "_Line number:"
-msgstr "列號(_L):"
+msgstr "_Linjenummer:"
 
 #: ../src/about.c:102
 msgid "Credits"
-msgstr "鳴謝"
+msgstr "Takk til"
 
 #: ../src/about.c:137
 msgid "Written by"
-msgstr "作者"
+msgstr "Skrevet av"
 
 #: ../src/about.c:140
 msgid "Documented by"
-msgstr "文件作者"
+msgstr "Dokumentert av"
 
 #: ../src/about.c:146
 msgid "Translated by"
-msgstr "翻譯者"
+msgstr "Oversatt av"
 
 #: ../src/about.c:197
 msgid "C_redits"
-msgstr "鳴謝(_R)"
+msgstr "T_akk til"
 
 #: ../src/about.c:199
 msgid "_Credits"
-msgstr "鳴謝(_C)"
+msgstr "_Takk til"
 
 #: ../src/about.c:209
 #, c-format
 msgid "About %s"
-msgstr "關於 %s"
+msgstr "Om %s"
 
 #: ../src/gnomeprint.c:261
 msgid "Print"
-msgstr "列印"
+msgstr "Skriv ut"
 
 #: ../src/gnomeprint.c:291
 msgid "Print Preview"
-msgstr "列印預覽"
+msgstr "Forhåndsvis utskrift"
 
 #: ../data/leafpad.desktop.in.h:1
 msgid "Simple text editor"
-msgstr "簡易文字編輯器"
+msgstr "Enkel tekstredigerer"

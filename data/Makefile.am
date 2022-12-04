@@ -8,6 +8,8 @@ desktop_DATA     = $(desktop_in_files:.desktop.in=.desktop)
 pixmapsdir       = $(datadir)/pixmaps
 pixmaps_DATA     = leafpad.png leafpad.xpm
 
+dist_man_MANS = leafpad.1
+
 EXTRA_DIST = \
 	$(desktop_DATA) $(desktop_in_files) \
-	$(pixmaps_DATA)
+	$(pixmaps_DATA) $(dist_man_MANS)

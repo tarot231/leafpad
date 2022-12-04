@@ -1,301 +1,300 @@
-# Traditional Chinese translation for leafpad.
-# Copyright (C) 2004 Free Software Foundation, Inc.
+# Kirghiz translation of leafpad.
+# Copyright (C) 2012 THE leafpad'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the leafpad package.
-# OLS3 <ols3@lxer.idv.tw>, 2005.
-# Wei-Lun Chao <bluebat@member.fsf.org>, 2008, 2013.
+# Chynggyz Jumaliev <translatorky@lavabit.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: leafpad 0.8.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-03 21:17+0900\n"
-"PO-Revision-Date: 2013-02-12 23:21+0800\n"
-"Last-Translator: Wei-Lun Chao <bluebat@member.fsf.org>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
-"Language: zh_TW\n"
+"PO-Revision-Date: 2012-12-17 12:56+0600\n"
+"Last-Translator: Chynggyz Jumaliev <translatorky@lavabit.com>\n"
+"Language-Team: Kirghiz <i18n-team-ky-kyrgyz@lists.sourceforge.net>\n"
+"Language: ky\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../src/menu.c:31
 msgid "/_File"
-msgstr "/檔案(_F)"
+msgstr "/_Файл"
 
 #: ../src/menu.c:33
 msgid "/File/_New"
-msgstr "/檔案(F)/新建(_N)"
+msgstr "/Файл/_Жаңы"
 
 #: ../src/menu.c:35
 msgid "/File/_Open..."
-msgstr "/檔案(F)/開啟(_O)…"
+msgstr "/Файл/_Ачуу..."
 
 #: ../src/menu.c:37
 msgid "/File/_Save"
-msgstr "/檔案(F)/儲存(_S)"
+msgstr "/Файл/_Сактоо"
 
 #: ../src/menu.c:39
 msgid "/File/Save _As..."
-msgstr "/檔案(F)/另存為(_A)…"
+msgstr "/Файл/Ат _коюп сактоо..."
 
 #: ../src/menu.c:45
 msgid "/File/Print Pre_view"
-msgstr "/檔案(F)/列印預覽(_V)"
+msgstr "/Файл/Басманы алдын ала _көрүү"
 
 #: ../src/menu.c:48
 msgid "/File/_Print..."
-msgstr "/檔案(F)/列印(_P)…"
+msgstr "/Файл/_Басма..."
 
 #: ../src/menu.c:55
 msgid "/File/_Quit"
-msgstr "/檔案(F)/離開(_Q)"
+msgstr "/Файл/_Чыгуу"
 
 #: ../src/menu.c:57
 msgid "/_Edit"
-msgstr "/編輯(_E)"
+msgstr "/_Оңдоо"
 
 #: ../src/menu.c:59
 msgid "/Edit/_Undo"
-msgstr "/編輯(E)/回復(_U)"
+msgstr "/Оңдоо/_Жокко чыгаруу"
 
 #: ../src/menu.c:61
 msgid "/Edit/_Redo"
-msgstr "/編輯(E)/重做(_R)"
+msgstr "/Оңдоо/_Кайталоо"
 
 #: ../src/menu.c:65
 msgid "/Edit/Cu_t"
-msgstr "/編輯(E)/剪下(_T)"
+msgstr "/Оңдоо/Ке_сүү"
 
 #: ../src/menu.c:67
 msgid "/Edit/_Copy"
-msgstr "/編輯(E)/複製(_C)"
+msgstr "/Оңдоо/_Көчүрүү"
 
 #: ../src/menu.c:69
 msgid "/Edit/_Paste"
-msgstr "/編輯(E)/貼上(_P)"
+msgstr "/Оңдоо/К_оюу"
 
 #: ../src/menu.c:71
 msgid "/Edit/_Delete"
-msgstr "/編輯(E)/刪除(_D)"
+msgstr "/Оңдоо/Ө_чүрүү"
 
 #: ../src/menu.c:75
 msgid "/Edit/Select _All"
-msgstr "/編輯(E)/全選(_A)"
+msgstr "/Оңдоо/_Баарын тандоо"
 
 #: ../src/menu.c:77
 msgid "/_Search"
-msgstr "/搜尋(_S)"
+msgstr "/_Издөө"
 
 #: ../src/menu.c:79
 msgid "/Search/_Find..."
-msgstr "/搜尋(S)/尋找(_F)…"
+msgstr "/_Издөө/_Табуу..."
 
 #: ../src/menu.c:81
 msgid "/Search/Find _Next"
-msgstr "/搜尋(S)/尋找下一個(_N)"
+msgstr "/_Издөө/_Кийинкини табуу"
 
 #: ../src/menu.c:83
 msgid "/Search/Find _Previous"
-msgstr "/搜尋(S)/尋找上一個(_P)"
+msgstr "/_Издөө/_Мурункуну табуу"
 
 #: ../src/menu.c:85
 msgid "/Search/_Replace..."
-msgstr "/搜尋/置換(_R)…"
+msgstr "/_Издөө/_Алмаштыруу..."
 
 #: ../src/menu.c:89
 msgid "/Search/_Jump To..."
-msgstr "/搜尋(S)/跳至(_J)…"
+msgstr "/_Издөө/_Өтүү..."
 
 #: ../src/menu.c:91
 msgid "/_Options"
-msgstr "/選項(_O)"
+msgstr "/_Параметрлер"
 
 #: ../src/menu.c:93
 msgid "/Options/_Font..."
-msgstr "/選項(O)/字型(_F)…"
+msgstr "/_Параметрлер/_Шрифт..."
 
 #: ../src/menu.c:95
 msgid "/Options/_Word Wrap"
-msgstr "/選項(O)/自動換列(_W)"
+msgstr "/_Параметрлер/_Сөздөрдү ташуу"
 
 #: ../src/menu.c:97
 msgid "/Options/_Line Numbers"
-msgstr "/選項(O)/列號(_L)"
+msgstr "/_Параметрлер/_Саптын номерлери"
 
 #: ../src/menu.c:101
 msgid "/Options/_Auto Indent"
-msgstr "/選項(O)/自動縮排(_A)"
+msgstr "/_Параметрлер/_Авто кемтик"
 
 #: ../src/menu.c:103
 msgid "/_Help"
-msgstr "/求助(_H)"
+msgstr "/_Жардам"
 
 #: ../src/menu.c:105
 msgid "/Help/_About"
-msgstr "/求助(H)/關於(_A)"
+msgstr "/Жардам/Программа _жөнүндө"
 
 #: ../src/callback.c:316
 msgid "GTK+ based simple text editor"
-msgstr "基於 GTK+ 的簡易文字編輯器"
+msgstr "GTK+'ка негизделген жөнөкөй текст редактору"
 
 #: ../src/callback.c:321
 msgid "translator-credits"
-msgstr ""
-"OLS3 <ols3@lxer.idv.tw>\n"
-"趙惟倫 <bluebat@member.fsf.org>"
+msgstr "Chynggyz Jumaliev <translatorky@lavabit.com>"
 
 #: ../src/view.c:62
 #, c-format
 msgid "Save changes to '%s'?"
-msgstr "要將變更儲存到「%s」？"
+msgstr "'%s' файлына өзгөртүүлөрдү сактайсызбы?"
 
 #: ../src/font.c:44
 msgid "Font"
-msgstr "字型"
+msgstr "Шрифт"
 
 #: ../src/selector.c:99
 #, c-format
 msgid "Current Locale (%s)"
-msgstr "目前語區 (%s)"
+msgstr "Кезектеги локаль (%s)"
 
 #: ../src/selector.c:130
 msgid "Other Codeset"
-msgstr "其它編碼"
+msgstr "Башка кодировка"
 
 #: ../src/selector.c:170
 msgid "Code_set:"
-msgstr "編碼(_S):"
+msgstr "_Кодировка:"
 
 #: ../src/selector.c:192
 #, c-format
 msgid "'%s' is not supported"
-msgstr "「%s」尚未支援"
+msgstr "'%s' колдолбойт"
 
 #: ../src/selector.c:253
 msgid "Auto-Detect"
-msgstr "自動偵測"
+msgstr "Автоаныктоо"
 
 #: ../src/selector.c:305
 msgid "Open"
-msgstr "開啟"
+msgstr "Ачуу"
 
 #: ../src/selector.c:305
 msgid "Save As"
-msgstr "另存新檔"
+msgstr "Ат коюп сактоо"
 
 #: ../src/selector.c:329
 msgid "C_haracter Coding:"
-msgstr "字元編碼(_H):"
+msgstr "_Символдордун кодировкасы:"
 
 #: ../src/selector.c:400
 #, c-format
 msgid "'%s' already exists. Overwrite?"
-msgstr "檔案「%s」已經存在。要覆蓋它嗎？"
+msgstr "'%s' эчак эле бар экен. Кайтадан жаздырасызбы?"
 
 #: ../src/file.c:55
 msgid "Untitled"
-msgstr "未命名"
+msgstr "Аты жок"
 
 #: ../src/file.c:212
 #, c-format
 msgid "Can't convert codeset to '%s'"
-msgstr "無法將編碼轉換為「%s」"
+msgstr "'%s' кодировкасына конверсиялоо оңунан чыккан жок"
 
 #: ../src/file.c:225
 msgid "Can't open file to write"
-msgstr "無法打開要寫入的檔案"
+msgstr "Файлды жазуу үчүн ачуу оңунан чыккан жок"
 
 #: ../src/file.c:230
 msgid "Can't write file"
-msgstr "無法寫入檔案"
+msgstr "Файлды жазуу оңунан чыккан жок"
 
 #: ../src/search.c:140
 msgid "Search string not found"
-msgstr "找不到搜尋字串"
+msgstr "Изделген сап табылган жок"
 
 #: ../src/search.c:193
 msgid "Replace?"
-msgstr "要置換嗎？"
+msgstr "Алмаштырасызбы?"
 
 #: ../src/search.c:260
 #, c-format
 msgid "%d strings replaced"
-msgstr "置換了 %d 個字串"
+msgstr "%d сап алмаштырылды"
 
 #: ../src/search.c:306
 msgid "Replace"
-msgstr "置換"
+msgstr "Алмаштыруу"
 
 #: ../src/search.c:313
 msgid "Find"
-msgstr "尋找"
+msgstr "Табуу"
 
 #: ../src/search.c:326
 msgid "Fi_nd what:"
-msgstr "尋找(_N):"
+msgstr "_Табуу:"
 
 #: ../src/search.c:342
 msgid "Re_place with:"
-msgstr "置換成(_P):"
+msgstr "_Алмаштыруу:"
 
 #: ../src/search.c:356
 msgid "_Match case"
-msgstr "區分大小寫(_M)"
+msgstr "_Регистрди эсепке алуу"
 
 #: ../src/search.c:361
 msgid "Replace _all at once"
-msgstr "全部置換(_A)"
+msgstr "_Баарын алмаштыруу"
 
 #: ../src/search.c:412
 msgid "Jump To"
-msgstr "跳至"
+msgstr "Өтүү"
 
 #: ../src/search.c:418
 msgid "_Jump"
-msgstr "跳至(_J)"
+msgstr "_Өтүү"
 
 #: ../src/search.c:425
 msgid "_Line number:"
-msgstr "列號(_L):"
+msgstr "_Саптын номери:"
 
 #: ../src/about.c:102
 msgid "Credits"
-msgstr "鳴謝"
+msgstr "Алкыштар"
 
 #: ../src/about.c:137
 msgid "Written by"
-msgstr "作者"
+msgstr "Жазгандар"
 
 #: ../src/about.c:140
 msgid "Documented by"
-msgstr "文件作者"
+msgstr "Документтегендер"
 
 #: ../src/about.c:146
 msgid "Translated by"
-msgstr "翻譯者"
+msgstr "Которгондор"
 
 #: ../src/about.c:197
 msgid "C_redits"
-msgstr "鳴謝(_R)"
+msgstr "А_лкыштар"
 
 #: ../src/about.c:199
 msgid "_Credits"
-msgstr "鳴謝(_C)"
+msgstr "_Алкыштар"
 
 #: ../src/about.c:209
 #, c-format
 msgid "About %s"
-msgstr "關於 %s"
+msgstr "\"%s\" жөнүндө"
 
 #: ../src/gnomeprint.c:261
 msgid "Print"
-msgstr "列印"
+msgstr "Басма"
 
 #: ../src/gnomeprint.c:291
 msgid "Print Preview"
-msgstr "列印預覽"
+msgstr "Басманы алдын ала көрүү"
 
 #: ../data/leafpad.desktop.in.h:1
 msgid "Simple text editor"
-msgstr "簡易文字編輯器"
+msgstr "Жөнөкөй текст редактору"

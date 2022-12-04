@@ -1,3 +1,12 @@
+2022-12-04
+
+  version 0.8.19:
+	* Replaced GtkSourceIter by newer version
+	  to fix Unicode character search behavior (Mi605).
+	* Fixed samba write bug (Nils Kvist).
+	* Added man page (LAMurakami).
+	* Added and updated some translations.
+
 2010-12-23
 
   version 0.8.18.1:
