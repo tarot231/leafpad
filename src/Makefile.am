@@ -28,3 +28,6 @@ leafpad_SOURCES = \
 leafpad_LDADD    = $(GTK_LIBS) $(GNOMEPRINT_LIBS) $(INTLLIBS)
 leafpad_CFLAGS   = $(GTK_CFLAGS) $(GNOMEPRINT_CFLAGS)
 leafpad_CPPFLAGS = -DICONDIR=\"$(datadir)/pixmaps\"
+if OS_WIN32
+leafpad_LDFLAGS = -mwindows
+endif

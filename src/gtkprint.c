@@ -139,13 +139,21 @@ static GtkPrintOperation *create_print_operation(GtkTextView *text_view)
 	
 	if (settings)
 		gtk_print_operation_set_print_settings(op, settings);
+
+#ifdef G_OS_WIN32 /* Apply gitlab gtk #4c399695 fix WIN32 printing */ 
+  GtkUnit units = GTK_UNIT_POINTS;
+  gtk_print_operation_set_use_full_page (op, FALSE);
+  gtk_print_operation_set_unit (op, units);
+#else
+  GtkUnit units = GTK_UNIT_MM;
+#endif
 	
 	if (!page_setup) {
 		page_setup = gtk_page_setup_new();
-		gtk_page_setup_set_top_margin(page_setup, 25.0, GTK_UNIT_MM);
-		gtk_page_setup_set_bottom_margin(page_setup, 20.0, GTK_UNIT_MM);
-		gtk_page_setup_set_left_margin(page_setup, 20.0, GTK_UNIT_MM);
-		gtk_page_setup_set_right_margin(page_setup, 20.0, GTK_UNIT_MM);
+		gtk_page_setup_set_top_margin(page_setup, 25.0, units);
+		gtk_page_setup_set_bottom_margin(page_setup, 20.0, units);
+		gtk_page_setup_set_left_margin(page_setup, 20.0, units);
+		gtk_page_setup_set_right_margin(page_setup, 20.0, units);
 	}
 	gtk_print_operation_set_default_page_setup(op, page_setup);
 	
