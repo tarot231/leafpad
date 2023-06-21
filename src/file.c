@@ -31,8 +31,12 @@
 gboolean check_file_writable(gchar *filename)
 {
 	FILE *fp;
-	
+
+#ifdef __MINGW32__	
+	if ((fp = fopen(filename, "a+b")) != NULL) {
+#else
 	if ((fp = fopen(filename, "a")) != NULL) {
+#endif
 		fclose(fp);
 		return TRUE;
 	}
@@ -216,8 +220,12 @@ gint file_save_real(GtkWidget *view, FileInfo *fi)
 		g_error_free(err);
 		return -1;
 	}
-	
+
+#ifdef __MINGW32__	
+	fp = fopen(fi->filename, "wb");
+#else
 	fp = fopen(fi->filename, "w");
+#endif
 	if (!fp) {
 		run_dialog_message(gtk_widget_get_toplevel(view),
 			GTK_MESSAGE_ERROR, _("Can't open file to write"));
