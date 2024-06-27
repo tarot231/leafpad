@@ -342,7 +342,6 @@ gint main(gint argc, gchar **argv)
 		gtk_item_factory_get_widget(ifactory, "/Edit/Undo"),
 		gtk_item_factory_get_widget(ifactory, "/Edit/Redo"));
 //	hlight_init(pub->mw->buffer);
-	dnd_init(pub->mw->view);
 	
 	if (pub->fi->filename)
 		file_open_real(pub->mw->view, pub->fi);
