@@ -217,7 +217,7 @@ gint file_save_real(GtkWidget *view, FileInfo *fi)
 		return -1;
 	}
 	
-	fp = fopen(fi->filename, "w");
+	fp = fopen(fi->filename, "wb");
 	if (!fp) {
 		run_dialog_message(gtk_widget_get_toplevel(view),
 			GTK_MESSAGE_ERROR, _("Can't open file to write"));

@@ -266,11 +266,7 @@ DV({g_print("Painting line numbers %d - %d\n",
 		                  NULL,
 		                  widget,
 		                  NULL,
-#if GTK_CHECK_VERSION(2, 6, 0)  // Is this solution???
 		                  layout_width + justify_width + margin / 2 + 1,
-#else
-		                  layout_width + justify_width + margin / 2,
-#endif
 		                  pos,
 		                  layout);
 //		g_free (str);

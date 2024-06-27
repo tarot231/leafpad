@@ -276,14 +276,8 @@ msgstr "Gedocumenteerd door"
 msgid "Translated by"
 msgstr "Vertaald door"
 
-# if GTK_CHECK_VERSION(2, 4, 0)
 #: ../src/about.c:197
 msgid "C_redits"
-msgstr "_Met dank aan"
-
-# else (GTK_CHECK_VERSION)
-#: ../src/about.c:199
-msgid "_Credits"
 msgstr "_Met dank aan"
 
 #: ../src/about.c:209

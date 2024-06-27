@@ -126,7 +126,6 @@ gint on_file_save_as(void)
 	return 0;
 }
 #ifdef ENABLE_PRINT
-#	if GTK_CHECK_VERSION(2, 10, 0)
 void on_file_print_preview(void)
 {
 	create_gtkprint_preview_session(GTK_TEXT_VIEW(pub->mw->view),
@@ -138,12 +137,6 @@ void on_file_print(void)
 	create_gtkprint_session(GTK_TEXT_VIEW(pub->mw->view),
 		get_file_basename(pub->fi->filename, FALSE));
 }
-#	else
-void on_file_print(void)
-{
-	create_gnomeprint_session();
-}
-#	endif
 #endif
 void on_file_close(void)
 {
@@ -291,12 +284,10 @@ void on_option_line_numbers(void)
 
 void on_option_always_on_top(void)
 {
-#if GTK_CHECK_VERSION(2, 4, 0)
 	static gboolean flag = FALSE;
 	
 	flag =! flag;
 	gtk_window_set_keep_above(GTK_WINDOW(pub->mw->window), flag);
-#endif
 }
 
 void on_option_auto_indent(void)
@@ -323,7 +314,6 @@ void on_help_about(void)
 	translator_credits = strcmp(translator_credits, "translator-credits")
 		? translator_credits : NULL;
 	
-#if GTK_CHECK_VERSION(2, 6, 0)
 	const gchar *artists[] = {
 		"Lapo Calamandrei <calamandrei@gmail.com>",
 		NULL
@@ -338,36 +328,4 @@ void on_help_about(void)
 		"translator-credits", translator_credits,
 		"logo-icon-name", PACKAGE,
 		NULL);
-#else
-	static GtkWidget *about = NULL;
-
-	if (about != NULL) {
-		gtk_window_present(GTK_WINDOW(about));
-		return;
-	}
-	
-	const gchar *documenters[] = {
-		NULL
-	};
-	GdkPixbuf *logo = gdk_pixbuf_new_from_file(
-		ICONDIR G_DIR_SEPARATOR_S PACKAGE ".png", NULL);
-	about = create_about_dialog(
-		PACKAGE_NAME,
-		PACKAGE_VERSION,
-		copyright,
-		comments,
-		authors,
-		documenters,
-		translator_credits,
-		logo);
-	if (logo)
-		g_object_unref(logo);
-	gtk_window_set_transient_for(GTK_WINDOW(about),
-		GTK_WINDOW(pub->mw->window));
-	gtk_window_set_destroy_with_parent(GTK_WINDOW(about), TRUE);
-	g_signal_connect(G_OBJECT(about), "destroy",
-		G_CALLBACK(gtk_widget_destroyed), &about);
-
-	gtk_widget_show(about);
-#endif
 }

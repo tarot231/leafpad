@@ -33,10 +33,6 @@
 #include "search.h"
 #include "hlight.h"
 
-#if !GTK_CHECK_VERSION(2, 4, 0)
-#	define gtk_dialog_set_has_separator(Dialog, Setting)
-#endif
-
 static gchar *string_find    = NULL;
 static gchar *string_replace = NULL;
 static gboolean match_case, replace_all;//, replace_mode = FALSE;
@@ -191,15 +187,11 @@ static gint document_replace_real(GtkWidget *textview)
 				if (num == 0 && q_dialog == NULL)
 					q_dialog = create_dialog_message_question(
 						gtk_widget_get_toplevel(textview), _("Replace?"));
-#if GTK_CHECK_VERSION(2, 10, 0)
 					GtkTextIter ins,bou;
 					gtk_text_buffer_get_selection_bounds(textbuffer, &ins, &bou);
-#endif
 				switch (gtk_dialog_run(GTK_DIALOG(q_dialog))) {
 				case GTK_RESPONSE_YES:
-#if GTK_CHECK_VERSION(2, 10, 0)
 					gtk_text_buffer_select_range(textbuffer, &ins, &bou);
-#endif
 					break;
 				case GTK_RESPONSE_NO:
 					continue;

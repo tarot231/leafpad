@@ -93,16 +93,16 @@ static void undo_create_undo_info(GtkTextBuffer *buffer, gchar command, gint sta
 	if (undo_gstr->len) {
 		if ((end - start == 1) && (command == ui_tmp->command)) {
 			switch (keyval) {
-			case GDK_BackSpace:
+			case GDK_KEY_BackSpace:
 				if (end == ui_tmp->start)
 					seq_flag = TRUE;
 				break;
-			case GDK_Delete:
+			case GDK_KEY_Delete:
 				if (start == ui_tmp->start)
 					seq_flag = TRUE;
 				break;
-			case GDK_Tab:
-			case GDK_space:
+			case GDK_KEY_Tab:
+			case GDK_KEY_space:
 				if (start == ui_tmp->end)
 					seq_flag = TRUE;
 				break;
@@ -110,9 +110,9 @@ static void undo_create_undo_info(GtkTextBuffer *buffer, gchar command, gint sta
 				if (start == ui_tmp->end)
 					if (keyval && keyval < 0xF000)
 						switch (prev_keyval) {
-						case GDK_Return:
-						case GDK_Tab:
-						case GDK_space:
+						case GDK_KEY_Return:
+						case GDK_KEY_Tab:
+						case GDK_KEY_space:
 							break;
 						default:
 							seq_flag = TRUE;
@@ -144,7 +144,7 @@ static void undo_create_undo_info(GtkTextBuffer *buffer, gchar command, gint sta
 	
 	if (end - start == 1 &&
 		((keyval && keyval < 0xF000) ||
-		  keyval == GDK_BackSpace || keyval == GDK_Delete || keyval == GDK_Tab)) {
+		  keyval == GDK_KEY_BackSpace || keyval == GDK_KEY_Delete || keyval == GDK_KEY_Tab)) {
 		ui_tmp->command = command;
 		ui_tmp->start = start;
 		ui_tmp->end = end;
@@ -182,7 +182,7 @@ DV(	g_print("delete-range\n"));
 	start = gtk_text_iter_get_offset(start_iter);
 	end = gtk_text_iter_get_offset(end_iter);
 	
-	if (get_current_keyval() == GDK_BackSpace)
+	if (get_current_keyval() == GDK_KEY_BackSpace)
 		command = BS;
 	else
 		command = DEL;
