@@ -120,8 +120,8 @@ static gboolean cb_key_press_event(GtkWidget *view, GdkEventKey *event)
 	keyval = 0;
 //g_print("key-press-event: 0x%X\n", event->keyval);
 	switch (event->keyval) {
-	case GDK_Up:		// Try [Shift]+[Down]. it works bad.
-	case GDK_Down:
+	case GDK_KEY_Up:		// Try [Shift]+[Down]. it works bad.
+	case GDK_KEY_Down:
 		if (gtk_text_view_move_mark_onscreen(GTK_TEXT_VIEW(view), mark)) {
 			GdkRectangle iter_rect;
 			gtk_text_buffer_get_iter_at_mark(buffer, &iter, mark);
@@ -138,8 +138,8 @@ static gboolean cb_key_press_event(GtkWidget *view, GdkEventKey *event)
 			return TRUE;
 		}
 		break;
-	case GDK_Page_Up:
-	case GDK_Page_Down:
+	case GDK_KEY_Page_Up:
+	case GDK_KEY_Page_Down:
 		if (gtk_text_view_move_mark_onscreen(GTK_TEXT_VIEW(view), mark)) {
 			GdkRectangle visible_rect, iter_rect;
 			gint pos = 0;
@@ -164,18 +164,18 @@ static gboolean cb_key_press_event(GtkWidget *view, GdkEventKey *event)
 			return TRUE;
 		}
 		break;
-	case GDK_Return:
+	case GDK_KEY_Return:
 		if (indent_get_state()) {
 			indent_real(view);
 			return TRUE;
 		}
 		break;
-	case GDK_Tab:
+	case GDK_KEY_Tab:
 		if (event->state & GDK_CONTROL_MASK) {
 			indent_toggle_tab_width(view);
 			return TRUE;
 		}
-	case GDK_ISO_Left_Tab:
+	case GDK_KEY_ISO_Left_Tab:
 		if (event->state & GDK_SHIFT_MASK)
 			indent_multi_line_unindent(GTK_TEXT_VIEW(view)->buffer);
 		else if (!check_selection_bound(GTK_TEXT_VIEW(view)->buffer))

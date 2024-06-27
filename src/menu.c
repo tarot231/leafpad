@@ -159,23 +159,23 @@ GtkWidget *create_menu_bar(GtkWidget *window)
 	
 	/* hidden keybinds */
 	gtk_accel_group_connect(
-		accel_group, GDK_W, GDK_CONTROL_MASK, 0,
+		accel_group, GDK_KEY_W, GDK_CONTROL_MASK, 0,
 		g_cclosure_new_swap(G_CALLBACK(on_file_close), NULL, NULL));
 	gtk_accel_group_connect(
-		accel_group, GDK_T, GDK_CONTROL_MASK, 0,
+		accel_group, GDK_KEY_T, GDK_CONTROL_MASK, 0,
 		g_cclosure_new_swap(G_CALLBACK(on_option_always_on_top), NULL, NULL));
 	gtk_widget_add_accelerator(
 		gtk_item_factory_get_widget(ifactory, "/Edit/Redo"),
-		"activate", accel_group, GDK_Y, GDK_CONTROL_MASK, 0);
+		"activate", accel_group, GDK_KEY_Y, GDK_CONTROL_MASK, 0);
 	gtk_widget_add_accelerator(
 		gtk_item_factory_get_widget(ifactory, "/Search/Find Next"),
-		"activate", accel_group, GDK_F3, 0, 0);
+		"activate", accel_group, GDK_KEY_F3, 0, 0);
 	gtk_widget_add_accelerator(
 		gtk_item_factory_get_widget(ifactory, "/Search/Find Previous"),
-		"activate", accel_group, GDK_F3, GDK_SHIFT_MASK, 0);
+		"activate", accel_group, GDK_KEY_F3, GDK_SHIFT_MASK, 0);
 	gtk_widget_add_accelerator(
 		gtk_item_factory_get_widget(ifactory, "/Search/Replace..."),
-		"activate", accel_group, GDK_R, GDK_CONTROL_MASK, 0);
+		"activate", accel_group, GDK_KEY_R, GDK_CONTROL_MASK, 0);
 	
 	/* initialize sensitivities */
 	gtk_widget_set_sensitive(
