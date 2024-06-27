@@ -17,8 +17,6 @@ leafpad_SOURCES = \
 	search.h search.c \
 	dialog.h dialog.c \
 	gtkprint.h gtkprint.c \
-	gnomeprint.h gnomeprint.c \
-	about.h about.c \
 	utils.h utils.c \
 	emacs.h emacs.c \
 	gtksourceiter.h gtksourceiter.c \

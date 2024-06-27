@@ -19,15 +19,10 @@
 
 #define GLOBAL_VARIABLE_DEFINE
 #include "leafpad.h"
-#if GLIB_CHECK_VERSION(2, 6, 0)
-#	include <glib/gstdio.h>
-#endif
+#include <glib/gstdio.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#if !GLIB_CHECK_VERSION(2, 6, 0)
-#	include <getopt.h>
-#endif
 
 typedef struct {
 	gint width;
@@ -45,12 +40,8 @@ static void load_config_file(Conf *conf)
 	gchar buf[BUFSIZ];
 	gchar **num;
 	
-#if GLIB_CHECK_VERSION(2, 6, 0)
 	path = g_build_filename(g_get_user_config_dir(),
 	    PACKAGE, PACKAGE "rc", NULL);
-#else
-	path = g_build_filename(g_get_home_dir(), "." PACKAGE, NULL);
-#endif
 	fp = fopen(path, "r");
 	g_free(path);
 	if (!fp)
@@ -100,22 +91,13 @@ void save_config_file(void)
 		GTK_CHECK_MENU_ITEM(gtk_item_factory_get_item(ifactory,
 			"/Options/Auto Indent")));
 	
-#if GLIB_CHECK_VERSION(2, 6, 0)
 	path = g_build_filename(g_get_user_config_dir(), PACKAGE, NULL);
 	if (!g_file_test(path, G_FILE_TEST_IS_DIR)) {
-# if GLIB_CHECK_VERSION(2, 8, 0)
 		g_mkdir_with_parents(path, 0700);
-# else
-		g_mkdir(g_get_user_config_dir(), 0700);
-		g_mkdir(path, 0700);
-# endif
 	}
 	g_free(path);
 	path = g_build_filename(g_get_user_config_dir(),
 	    PACKAGE, PACKAGE "rc", NULL);
-#else
-	path = g_build_filename(g_get_home_dir(), "." PACKAGE, NULL);
-#endif
 	fp = fopen(path, "w");
 	if (!fp) {
 		g_print("%s: can't save config file - %s\n", PACKAGE, path);
@@ -135,35 +117,6 @@ void save_config_file(void)
 	g_free(fontname);
 }
 
-#if !GLIB_CHECK_VERSION(2, 6, 0)
-static struct option longopts[] = {
-	{ "help", no_argument, 0, '?' },
-	{ "codeset", required_argument, 0, 0 },
-//	{ "charset", required_argument, 0, 0 },
-//	{ "encoding", required_argument, 0, 0 },
-	{ "tab-width", required_argument, 0, 't' },
-	{ "jump", required_argument, 0, 'j' },
-	{ "version", no_argument, 0, 'v' },
-	{ 0, 0, 0, 0 }
-};
-
-static void print_usage(void)
-{
-	g_print("Usage:\n");
-	g_print("  %s \[OPTION...] \[filename]\n", PACKAGE);
-	g_print("\n");
-	g_print("Options:\n");
-	g_print("  --codeset=CODESET        Set codeset to open file\n");
-	g_print("  --tab-width=WIDTH        Set tab width\n");
-	g_print("  --jump=LINENUM           Jump to specified line\n");
-	g_print("  --display=DISPLAY        X display to use\n");
-	g_print("  --screen=SCREEN          X screen to use\n");
-	g_print("  --sync                   Make X calls synchronous\n");
-	g_print("  --version                Show version number\n");
-	g_print("  --help                   Show this help\n");
-}
-#endif
-
 gint jump_linenum = 0;
 
 static void parse_args(gint argc, gchar **argv, FileInfo *fi)
@@ -172,7 +125,6 @@ static void parse_args(gint argc, gchar **argv, FileInfo *fi)
 	gint i;
 	GError *error = NULL;
 	
-#if GLIB_CHECK_VERSION(2, 6, 0)
 	GOptionContext *context;
 	gchar *opt_codeset = NULL;
 	gint opt_tab_width = 0;
@@ -218,42 +170,6 @@ static void parse_args(gint argc, gchar **argv, FileInfo *fi)
 	if (opt_jump)
 		jump_linenum = opt_jump;
 	
-#else
-	gint c;
-	
-	do {
-		c = getopt_long(argc, argv, "", longopts, NULL);
-		switch (c) {
-		case 0:
-			if (optarg) {
-				g_convert("TEST", -1, "UTF-8", optarg, NULL, NULL, &error);
-				if (error) {
-					g_error_free(error);
-					error = NULL;
-				} else {
-					g_free(fi->charset);
-					fi->charset = g_strdup(optarg);
-				}
-			}
-			break;
-		case 't':
-			if (optarg)
-				indent_set_default_tab_width(atoi(optarg));
-			break;
-		case 'j':
-			if (optarg)
-				jump_linenum = atoi(optarg);
-			break;
-		case 'v':
-			g_print("%s\n", PACKAGE_STRING);
-			exit(0);
-		case '?':
-			print_usage();
-			exit(0);
-		}
-	} while (c != -1);
-#endif
-	
 	if (fi->charset 
 		&& (g_strcasecmp(fi->charset, get_default_charset()) != 0)
 		&& (g_strcasecmp(fi->charset, "UTF-8") != 0)) {
@@ -266,13 +182,8 @@ static void parse_args(gint argc, gchar **argv, FileInfo *fi)
 			fi->charset_flag = TRUE;
 	}
 	
-#if GLIB_CHECK_VERSION(2, 6, 0)
 	if (argc >= 2)
 		fi->filename = parse_file_uri(argv[1]);
-#else
-	if (optind < argc)
-		fi->filename = parse_file_uri(argv[optind]);
-#endif
 }
 
 gint main(gint argc, gchar **argv)
@@ -296,10 +207,6 @@ gint main(gint argc, gchar **argv)
 	
 	gtk_init(&argc, &argv);
 	g_set_application_name(PACKAGE_NAME);
-	
-#if !GTK_CHECK_VERSION(2, 6, 0)
-	add_about_stock();
-#endif
 	
 	pub->mw = create_main_window();
 	

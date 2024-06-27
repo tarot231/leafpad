@@ -41,16 +41,12 @@ static GtkItemFactoryEntry menu_items[] =
 	{ "/File/---", NULL,
 		NULL, 0, "<Separator>" },
 #ifdef ENABLE_PRINT
-#	if GTK_CHECK_VERSION(2, 10, 0)
 	{ N_("/File/Print Pre_view"), "<shift><control>P",
 		G_CALLBACK(on_file_print_preview), 0, "<StockItem>", GTK_STOCK_PRINT_PREVIEW },
-#	endif
 	{ N_("/File/_Print..."), "<control>P",
 		G_CALLBACK(on_file_print), 0, "<StockItem>", GTK_STOCK_PRINT },
-#	if GTK_CHECK_VERSION(2, 10, 0)
 	{ "/File/---", NULL,
 		NULL, 0, "<Separator>" },
-#	endif
 #endif
 	{ N_("/File/_Quit"), "<control>Q",
 		G_CALLBACK(on_file_quit), 0, "<StockItem>", GTK_STOCK_QUIT },
@@ -103,11 +99,7 @@ static GtkItemFactoryEntry menu_items[] =
 	{ N_("/_Help"), NULL,
 		NULL, 0, "<Branch>" },
 	{ N_("/Help/_About"), NULL,
-#if GTK_CHECK_VERSION(2, 6, 0)
 		G_CALLBACK(on_help_about), 0, "<StockItem>", GTK_STOCK_ABOUT },
-#else
-		G_CALLBACK(on_help_about), 0, "<StockItem>", "my-gtk-about" },
-#endif
 };
 
 static gint nmenu_items = sizeof(menu_items) / sizeof(GtkItemFactoryEntry);
