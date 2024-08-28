@@ -47,3 +47,17 @@ m4/lt~obsolete.m4
 # can automatically generate from config.status script
 # (which is called by configure script))
 Makefile
+
+# More generated files
+*.o
+*.gmo
+config.h
+po/POTFILES
+po/stamp-it
+src/.deps/
+data/leafpad.desktop
+po/.intltool-merge-cache
+src/leafpad
+INSTALL
+mkinstalldirs
+config.h.in~
