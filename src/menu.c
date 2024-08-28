@@ -146,25 +146,20 @@ GtkWidget *create_menu_bar(GtkWidget *window)
 {
 	GtkAccelGroup *accel_group;
 	GtkItemFactory *ifactory;
-	gboolean flag_emacs = FALSE;
-	
 	gchar *key_theme = NULL;
 	GtkSettings *settings = gtk_settings_get_default();
 	if (settings) {
 		g_object_get(settings, "gtk-key-theme-name", &key_theme, NULL);
-		if (key_theme) {
-			if (!g_ascii_strcasecmp(key_theme, "Emacs"))
-				flag_emacs = TRUE;
+		if (key_theme)
 			g_free(key_theme);
-		}
 	}
-	
+
 	accel_group = gtk_accel_group_new();
 	ifactory = gtk_item_factory_new(GTK_TYPE_MENU_BAR, "<main>", accel_group);
 	gtk_item_factory_set_translate_func(ifactory, menu_translate, NULL, NULL);
 	gtk_item_factory_create_items(ifactory, nmenu_items, menu_items, NULL);
 	gtk_window_add_accel_group(GTK_WINDOW(window), accel_group);
-	
+
 	/* hidden keybinds */
 	gtk_accel_group_connect(
 		accel_group, GDK_W, GDK_CONTROL_MASK, 0,
