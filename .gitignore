@@ -61,3 +61,7 @@ src/leafpad
 INSTALL
 mkinstalldirs
 config.h.in~
+configure.ac~
+configure~
+po/.intltool-merge-cache.lock
+*.in
