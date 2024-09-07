@@ -5,6 +5,8 @@ if [ -f Makefile ] ; then
 	make -j2 distclean
 fi
 
+autoupdate
+
 srcdir=`dirname "$0"`
 test -z "$srcdir" && srcdir=.
 
