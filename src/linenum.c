@@ -55,21 +55,19 @@ get_lines (GtkTextView  *text_view,
 {
 	GtkTextIter iter;
 	gint count;
-	gint size;
-		gint last_line_num;
-	
+	gint last_line_num;
+
 	g_array_set_size (buffer_coords, 0);
 	g_array_set_size (numbers, 0);
-	
+
 	/* Get iter at first y */
 	gtk_text_view_get_line_at_y (text_view, &iter, y1, NULL);
-	
+
 	/* For each iter, get its location and add it to the arrays.
 	 * Stop when we pass y2
 	 */
 	count = 0;
-	size = 0;
-	
+
 	while (!gtk_text_iter_is_end (&iter))
 	{
 		gint y, height;

@@ -59,19 +59,20 @@ static void load_config_file(Conf *conf)
 	if (fgets(buf, sizeof(buf), fp)) {
 		num = g_strsplit(buf, "." , 3);
 		if ((atoi(num[1]) >= 8) && (atoi(num[2]) >= 0)) {
-			fgets(buf, sizeof(buf), fp);
-			conf->width = atoi(buf);
-			fgets(buf, sizeof(buf), fp);
-			conf->height = atoi(buf);
-			fgets(buf, sizeof(buf), fp);
-			g_free(conf->fontname);
-			conf->fontname = g_strdup(buf);
-			fgets(buf, sizeof(buf), fp);
-			conf->wordwrap = atoi(buf);
-			fgets(buf, sizeof(buf), fp);
-			conf->linenumbers = atoi(buf);
-			fgets(buf, sizeof(buf), fp);
-			conf->autoindent = atoi(buf);
+			if (fgets(buf, sizeof(buf), fp))
+				conf->width = atoi(buf);
+			if (fgets(buf, sizeof(buf), fp))
+				conf->height = atoi(buf);
+			if (fgets(buf, sizeof(buf), fp)) {
+				g_free(conf->fontname);
+				conf->fontname = g_strdup(buf);
+			}
+			if (fgets(buf, sizeof(buf), fp))
+				conf->wordwrap = atoi(buf);
+			if (fgets(buf, sizeof(buf), fp))
+				conf->linenumbers = atoi(buf);
+			if (fgets(buf, sizeof(buf), fp))
+				conf->autoindent = atoi(buf);
 		}
 		g_strfreev(num);
 	}
