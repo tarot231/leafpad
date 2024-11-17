@@ -52,8 +52,7 @@ static gint n_drag_types = sizeof(drag_types) / sizeof(drag_types[0]);
 
 void dnd_init(GtkWidget *widget)
 {
-	gtk_drag_dest_set(widget, GTK_DEST_DEFAULT_ALL,
-		drag_types, n_drag_types, GDK_ACTION_COPY);
+  gtk_drag_dest_set(widget, GTK_DEST_DEFAULT_MOTION, drag_types, n_drag_types, GDK_ACTION_MOVE);
 	g_signal_connect(G_OBJECT(widget), "drag_data_received",
 		G_CALLBACK(dnd_drag_data_recieved_handler), NULL);
 	g_signal_connect(G_OBJECT(widget), "drag_motion",
