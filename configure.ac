@@ -11,6 +11,19 @@ AM_PROG_CC_C_O
 
 PKG_CHECK_MODULES(GTK, gtk+-2.0)
 
+AC_MSG_CHECKING([for Win32])
+case "$host" in
+*-mingw*)
+    os_win32=yes
+    ;;
+*)  os_win32=no
+    ;;
+esac
+
+AC_MSG_RESULT([$os_win32])
+AM_CONDITIONAL(OS_WIN32, [test $os_win32 = yes])
+AC_SUBST(SOEXT)
+
 AC_ARG_ENABLE(chooser,
 	AC_HELP_STRING(--disable-chooser, [force to use GtkFileSelector]))
 if test "$enable_chooser" != "no"; then
