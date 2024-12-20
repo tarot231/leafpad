@@ -1,5 +1,4 @@
-Leafpad - GTK+ based simple text editor
-
+![Leafpad logo](data/icons/32x32/leafpad.png) Leafpad - GTK+ based simple text editor
 
 Description
 ===========
