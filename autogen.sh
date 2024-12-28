@@ -1,8 +1,10 @@
 #! /bin/sh
 
+N=$(nproc)
+
 if [ -f Makefile ] ; then
-	make -j2 clean
-	make -j2 distclean
+	make -j $N clean
+	make -j $N distclean
 fi
 
 autoupdate
