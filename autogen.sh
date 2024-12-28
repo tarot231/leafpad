@@ -1,8 +1,10 @@
 #! /bin/sh
 
+N=$(nproc)
+
 if [ -f Makefile ] ; then
-	make -j2 clean
-	make -j2 distclean
+	make -j$N -k clean
+	make -j$N -k distclean
 fi
 
 autoupdate
@@ -21,6 +23,9 @@ FLAGS_CPU="-march=native -mcpu=native -mtune=native"
 if test -z "$NOCONFIGURE"; then
     exec "$srcdir"/configure \
 		CFLAGS="$FLAGS_CPU -O2 -ftree-vectorize -fomit-frame-pointer -fno-strict-aliasing \
-		-Werror-implicit-function-declaration -Wno-deprecated-declarations -DNDEBUG -pipe" \
-		--prefix=/usr/local "$@"
+		-Werror-implicit-function-declaration -Wno-deprecated-declarations \
+		-Werror=incompatible-pointer-types \
+		-DNDEBUG -pipe" \
+		--prefix=/usr/local \
+		"$@"
 fi
