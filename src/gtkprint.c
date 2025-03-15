@@ -19,8 +19,6 @@
 
 #include <gtk/gtk.h>
 
-#if GTK_CHECK_VERSION(2, 10, 0)
-
 static PangoLayout *layout;
 static PangoFontDescription *font_desc;
 static gint line_count, lines_per_page, text_height;
@@ -218,6 +216,3 @@ void create_gtkprint_preview_session(GtkTextView *text_view, const gchar *title)
 	
 	g_object_unref(op);
 }
-
-#endif
-
